@@ -1,0 +1,576 @@
+$dishes2-color-primary: #FF3514 !default;
+$dishes2-color-body: #06163A !default;
+
+.home-dishes2 {
+	a {
+		color: #62718D;
+	}
+
+	.koganic-menu {
+		a {
+			color: $dishes2-color-body;
+		}
+	}
+
+	.header-3 {
+		.site-header-account {
+			.header-account {
+				border-color: #FFF;
+			}
+		}
+		.header-action {
+			a {
+				color: #FFF;
+			}
+			
+			.header-block {
+				&:not(.site-header-account) {
+					border-color: #FFF;
+				}
+			}			
+		}
+	}
+	.elementor-widget-text-editor {
+		color: $dishes2-color-body;
+	}
+
+	.product-box {
+		.product-info {
+			> a {
+				color: $dishes2-color-body;
+			}
+		}
+
+		.price {
+			color: $dishes2-color-body;
+		}
+	}
+
+	.jms-tabs-title {
+		ul {
+			li {
+				color: #62718D;
+
+				&.active,
+				&:hover {
+					color: $dishes2-color-primary;
+				}
+			}
+		}
+	}
+
+	.jmstestimonial-box {
+		.addon-title {
+			margin-bottom: 0;
+
+			@include min-1300 {
+				max-width: 484px;
+			}
+
+			h3 {
+				font-size: 42px;
+				font-weight: 600;
+				color: $dishes2-color-body;
+				line-height: 1.2;
+				margin-bottom: 0;
+
+				&:after {
+					height: 0;
+				}
+			}
+		}
+		.pt-reviewsbox-description {
+			.pt-content {
+				color: #62718D;
+			}
+		}
+
+		.pt-reviewsbox-author {
+			.pt-img {
+				margin: 0 28px 0 0;
+			}
+
+			.pt-title {
+				color: #62718D;
+				display: inline-flex;
+    			flex-direction: column;
+				
+				> strong {
+					color: $dishes2-color-body;
+					padding: 0;
+
+					&:after {
+						content: '';
+					}
+				}
+
+				span {
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+}
+
+.elementor-element {
+	&.elementor-element-a984e3f {
+		@include min-1300 {
+			margin-top: -106px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 21px;
+    		left: 0px;
+			background-image: url('assets/images/demo/dishes-icon-4.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 185px;
+		    height: 141px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}		
+	}
+
+	&.elementor-element-28eebd8 {
+		.owl-stage-outer {
+			overflow: visible;
+		}
+
+		.item {
+			border-radius: 20px;
+			box-shadow: 0px 0px 40px rgba(0,0,0,0.08);
+			padding: 0 15px;
+		    padding-top: 33px;
+		    padding-bottom: 24px;		
+		    background-color: #FFF;	
+
+			img {
+				opacity: 1 !important;
+			}	
+		}
+
+		.image {
+			margin-bottom: 23px;
+		}
+
+		.title-service {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 9px;
+		}
+
+		.description {
+			font-size: 18px;
+		    font-weight: 400;
+		    margin-top: 0;
+		}
+	}
+
+	&.elementor-element-1e25b33 {
+		margin-bottom: 4px;
+		
+		h3.title {
+			color: $dishes2-color-body;
+			line-height: 1.2;
+
+		}
+
+		.koganic-tabs-header {
+			.tabs-navigation-wrapper {
+				margin-top: 13px;
+			}
+		}
+
+		.layout-spacing-30 {
+			.item {
+				margin-bottom: 40px;
+			}
+		}		
+	}
+
+	&.elementor-element-d8fe71f {
+		margin-top: 80px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 333px;
+    		right: -58px;
+			background-image: url('assets/images/demo/dishes-icon-5.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 196px;
+		    height: 279px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+	}
+
+	&.elementor-element-ce6e2ae {
+		margin-bottom: 16px;
+	}
+	
+	&.elementor-element-21f6041 {
+		margin-top: 71px;
+	}
+
+	&.elementor-element-f2bdc31 {
+		margin-top: 5px;
+	}
+
+	&.elementor-element-eb1f474 {
+		background-image: url('assets/images/demo/dishes2-bg-delivery.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;		
+        background-size: cover;
+		padding-top: 85px;
+	    padding-bottom: 85px;
+        margin-top: 57px;
+
+        .service-elements {
+        	background-color: #fff;
+        	border-radius: 20px;
+        	padding: 38px 15px 25px;
+        	
+        	@include min-1300 {
+        		padding: 38px 30px 25px;
+        	}
+        	
+        	.service-box-icon {
+        		margin-bottom: 0;
+        		min-height: 50px;
+        	}
+
+        	.service-title {
+        		font-size: 22px;
+        		font-weight: 500;
+        		margin-top: 23px;
+        	}
+
+        	.service-subtitle {
+        		margin-top: 0;
+        		font-size: 16px;
+        		font-weight: 400;
+        		line-height: 1.65;
+        	}
+        }
+	}
+
+	&.elementor-widget-social-icons {
+		.elementor-social-icons-wrapper {
+			> div:not(:last-of-type) {
+				margin-right: 21px;
+				margin-right: 16px;
+			}
+		}
+
+		.elementor-social-icon {
+			background-color: transparent;
+			width: 27px;
+		    height: 27px;
+		    font-size: 27px;
+		    line-height: 1.4;
+			
+			i {
+				&.fa-facebook {
+					color: #1877F2;
+				}
+
+				&.fa-twitter {
+					color: #1DA1F2;
+				}
+
+				&.fa-instagram {
+					color: #EEAB6E;
+				}
+
+				&.fa-telegram {
+					color: #2AABEE;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-8003674 {
+		margin-top: 90px;
+		margin-bottom: 79px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -131px;
+    		left: -58px;
+			background-image: url('assets/images/demo/dishes-icon-6.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 257px;
+		    height: 240px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -133px;
+    		right: -75px;
+			background-image: url('assets/images/demo/dishes-icon-7.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 298px;
+		    height: 352px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}				
+	}
+
+	&.elementor-element-f2d48fd {
+		img {
+			@include min-1300 {
+				position: relative;
+    			left: -109px;
+			}
+		}
+	}
+
+	&.elementor-element-57e0b09 {
+		@include min-1300 {
+			margin-top: 13px;
+		}
+	}
+
+	&.elementor-element-40476c5 {
+		border-bottom: 1px solid #dbdbdb;
+		margin-bottom: 26px;
+		
+		.title {
+			margin-bottom: 0;
+		}		
+	}
+
+	&.elementor-element-178f594 {
+		iframe {
+			border-radius: 20px;
+		}
+	}
+
+	&.elementor-element-560cf75 {
+		margin-bottom: 7px;
+
+		.title {
+			margin-bottom: 0;
+		}
+	}
+
+	&.elementor-element-87a989b,
+	&.elementor-element-4b24b8f {
+		font-size: 24px;
+		font-weight: 500;
+
+		h5 {
+			color: $dishes2-color-primary;
+			font-size: 30px;
+		}
+	}
+
+	&.elementor-element-87a989b {
+		margin-bottom: 28px;
+
+		h5 {
+			margin-bottom: 2px;
+		}
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-4b24b8f {
+		h5 {
+			margin-bottom: 4px;
+		}
+
+		li {
+			margin-bottom: 2px;
+		}
+	}
+
+	&.elementor-element-a1fe905 {
+		margin-top: 69px;
+    	margin-bottom: 6px;
+	}
+
+	&.elementor-element-27cf254 {
+		font-size: 17px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-c5d77d8 {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}	
+
+	&.elementor-element-cd6e98f {
+		margin-bottom: 16px;
+		
+		.addon-title {
+			.title {
+				display: block;
+				border-bottom: 1px solid #DBDBDB;
+				line-height: 1.4;
+			}
+		}
+	}
+
+	&.elementor-element-7102898 {
+		color: $dishes2-color-body;
+		font-size: 24px;
+		font-weight: 500;
+		@extend .default_font;
+
+		.title1,
+		.title2,
+		.title3 {
+			font-size: 30px;
+			color: $dishes2-color-primary;
+		}
+
+		.title1 {
+			margin-bottom: 29px;
+		}
+
+		.title2 {
+			margin-bottom: 4px;
+		}
+
+		.title3 {
+			margin-top: 30px;
+			margin-bottom: 2px;
+			
+			+ p {
+				margin-top: 0;
+			}
+		}
+
+		ul {
+			li {
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	&.elementor-element-fead083 {
+		margin-top: 8px;
+		margin-bottom: 0;
+	}
+
+	&.elementor-element-6444903 {
+		margin-top: 71px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 121px;
+    		left: -25px;
+			background-image: url('assets/images/demo/dishes-icon-8.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 197px;
+		    height: 354px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}		
+	}
+
+	&.elementor-element-a97d58b {
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-1fb158b {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+
+	&.elementor-element-c2968e7 {
+		margin-top: 62px;
+	}
+
+	&.elementor-element-7ec2fc3 {
+		margin-top: 4px;
+		margin-bottom: 11px;
+	}
+}
+
+.footer-2 {
+	background-color: #F8F8F8;
+	padding-top: 98px;
+
+	hr {
+	    border-top: 1px solid #E3E3E3;
+	}
+
+	ul.menu {
+		font-weight: 500;
+	}
+
+	li {
+		margin-bottom: 9px;
+
+		a:after {
+			background-color: $dishes2-color-primary;
+		}
+	}
+	.elementor-widget {
+		h5 {
+			color: $dishes2-color-primary;
+		}
+	}
+
+	.instagram-pic-wrapper {
+		.layout-spacing-20 {
+			.item {
+				padding-left: 7.5px;
+				padding-right: 7.5px;
+
+				.instagram-picture {
+					border-radius: 5px;
+					border: 1px solid #D6D6D6;
+				}
+			}
+		}
+	}	
+}

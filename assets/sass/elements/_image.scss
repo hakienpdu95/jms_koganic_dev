@@ -1,0 +1,183 @@
+.image-carousel-box{
+    .owl-theme {
+        .owl-nav {
+            margin-top: 0;
+        }
+    }
+
+    .title-image{
+        font-size: 15px;
+        
+        margin-top: 5px;
+        a:hover{
+            @extend .color-primary;
+        }
+    }
+    a{
+        display: inline-block;
+        overflow: hidden;
+        img{
+            @extend .transition4;
+        }
+        &:hover{
+            img{
+                @include transform(scale(1.1));
+                @extend .transition4;
+            }
+        }
+    }
+
+    .item {
+        &.movecontent {
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            > a {
+                display: block;
+            }
+        }
+
+        > a {
+            > img {
+                width: 100%;
+                height: auto;
+                -webkit-transition: -webkit-transform 0.7s;
+                transition: -webkit-transform 0.7s;
+                transition: transform 0.7s;
+                transition: transform 0.7s, -webkit-transform 0.7s;
+            }
+        }
+        &:hover {
+            .pt-description {
+                .pt-title-large {
+                    span {
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            &.movecontent {
+                .btn {
+                    display: inline-flex;
+                }
+            }
+        }
+    }
+
+    .movecontent {
+        a:hover img {
+            transform: none;
+        }
+    }
+    .pt-description {
+        padding-top: 34px;
+
+        .pt-title-small {
+            font-size: 18px;
+            line-height: 26px;
+            
+            font-weight: 800;
+        }
+
+        .pt-title-large {
+            font-size: 48px;
+            line-height: 58px;
+            
+            font-weight: 800;
+            margin-top: 1px;        
+
+            span {
+                position: relative;
+                display: inline-block;
+
+                &:before {
+                    position: absolute;
+                    bottom: 4px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 0%;
+                    content: '';
+                    color: transparent;
+                    background-color: #333333;
+                    height: 2px;
+                    -webkit-transition: width 0.25s linear;
+                    transition: width 0.25s linear;
+                    -webkit-transition-delay: 0.25s;
+                    transition-delay: 0.25s;
+                }
+            }        
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            
+            margin-top: 1px;            
+        }
+
+        .btn {
+            margin-top: 23px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .item {
+        &.movecontent {
+            > a {
+                > img {
+                    position: relative;
+                    top: 0;
+                    will-change: top;
+                    -webkit-transition: top 0.25s;
+                    transition: top 0.25s;                    
+                }
+            }
+
+            .pt-description {
+                position: relative;
+                background: white;
+                top: 0px;
+                will-change: top;
+                -webkit-transition: top 0.25s;
+                transition: top 0.25s;                
+            }
+
+            .btn {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                -webkit-transition: .2s linear;
+                transition: .2s linear;
+                left: 50%;
+                -webkit-transform: translate(-50%, 0);
+                transform: translate(-50%, 0);                
+            }
+
+            &:hover {
+                > a {
+                    > img {
+                        top: -74px;
+                    }
+                }
+
+                .pt-description {
+                    top: -74px;
+                }
+
+                .btn {
+                    display: none;
+                    visibility: visible;
+                    opacity: 1;
+                    top: 100%;                    
+                }
+            }
+        }
+    }
+}

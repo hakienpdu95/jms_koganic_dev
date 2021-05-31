@@ -1,0 +1,504 @@
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-moz-transform: $transform;
+	-o-transform: $transform;
+	transform: $transform;
+}
+
+@mixin animation($animation) {
+	-webkit-animation: $animation;
+	-moz-animation: $animation;
+	-o-animation: $animation;
+	animation: $animation;
+}
+
+@mixin box-shadow($box-shadow){
+	-webkit-box-shadow: $box-shadow;
+    -moz-box-shadow: $box-shadow;
+    -o-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+@mixin appearance($appearance) {
+	-webkit-appearance: $appearance;
+	-moz-appearance: $appearance;
+	-o-appearance: $appearance;
+	appearance: $appearance;
+}
+
+@mixin align-items($value) {
+	-webkit-box-align: $value;
+	-webkit-align-items: $value;
+	-ms-flex-align: $value;
+	align-items: $value;
+}
+
+@mixin transition_image_hover() {
+	-webkit-transition: transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+	-moz-transition: transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+	transition: transform 2s cubic-bezier(0,0,.44,1.18),-webkit-transform 2s cubic-bezier(0,0,.44,1.18);
+}
+
+@mixin transition_button_hover() {
+    -ms-transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    -o-transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    -moz-transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    -webkit-transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+@mixin flex() {
+  	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/* Class Extend */
+
+@for $i from 1 through 10 {
+	$time_space: 100ms * $i;
+
+    .transition#{$i} {
+       @include transition(all $time_space ease-in-out 0s);
+    }
+
+}
+
+.qodefFadeToRight {
+    -webkit-animation:qodefFadeToRight .4s cubic-bezier(.77,0,.175,1) forwards;
+    -moz-animation:qodefFadeToRight .4s cubic-bezier(.77,0,.175,1) forwards;
+    animation:qodefFadeToRight .4s cubic-bezier(.77,0,.175,1) forwards;
+}
+
+.aligned_ver{
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+.aligned_hoz{
+	position: absolute;
+	left: 50%;
+	@include transform(translateX(-50%));
+}
+
+
+// BTN-SIZE
+.btn-size-default {
+    font-size: 14px;
+    line-height: 1.3;
+    padding: 6px 10px;
+}
+
+.btn-size-extra-small {
+ 	font-size: 12px;
+    line-height:16px;
+    padding: 10px 14px;
+}
+
+.btn-size-small {
+    font-size: inherit;
+	line-height: 18px;
+	padding: 12px 20px;
+}
+
+.btn-size-large {
+    font-size: 13px;
+    line-height:20px;
+    padding: 14px 40px;
+}
+
+.btn-size-extra-large {
+    font-size: 16px;
+    line-height:22px;
+    padding: 17px 40px;
+}
+.btn.btn-style-radius{
+	border-radius: 40px;
+}
+
+/**
+ * ================================
+ * Mixin - Responsive
+ * ================================
+ */
+
+@mixin min-1750{
+    @media only screen and (min-width: 1750px){
+        @content;
+    }
+}
+
+@mixin min-1720{
+    @media only screen and (min-width: 1720px){
+        @content;
+    }
+}
+
+@mixin min-1500 {
+    @media only screen and (min-width: 1500px){
+        @content;
+    }
+}
+
+@mixin min-1445{
+    @media only screen and (min-width: 1445px){
+        @content;
+    }
+}
+@mixin min-1400{
+    @media only screen and (min-width: 1400px){
+        @content;
+    }
+}
+@mixin min-1350 {
+    @media only screen and (min-width: 1350px){
+        @content;
+    }
+}
+
+@mixin min-1300{
+    @media only screen and (min-width: 1300px){
+        @content;
+    }
+}
+
+@mixin max-1299{
+    @media only screen and (max-width: 1299px){
+        @content;
+    }
+}
+
+@mixin min-1290 {
+    @media only screen and (min-width: 1290px) {
+        @content;
+    }
+}
+
+ @mixin min-1280 {
+    @media only screen and (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin min-1270{
+    @media only screen and (min-width: 1270px){
+        @content;
+    }
+}
+
+@mixin max-1270{
+    @media only screen and (max-width: 1270px){
+        @content;
+    }
+}
+
+@mixin max-1266{
+    @media only screen and (max-width: 1266px){
+        @content;
+    }
+}
+
+@mixin min-1200 {
+     @media only screen and (min-width: 1200px){
+         @content;
+     }
+}
+
+@mixin max-1200 {
+     @media only screen and (max-width: 1200px){
+         @content;
+     }
+}
+
+@mixin min-1024-1200 {
+    @media only screen and (min-width: 990px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin max-1099{
+    @media only screen and (max-width: 1099px){
+        @content;
+    }
+}
+
+@mixin max-1100{
+    @media only screen and (max-width: 1100px){
+        @content;
+    }
+}
+
+@mixin min-1025 {
+    @media only screen and (min-width: 1025px){
+        @content;
+    }
+}
+
+@mixin min-1024 {
+    @media only screen and (min-width: 1024px){
+        @content;
+    }
+}
+
+@mixin min-992 {
+     @media only screen and(min-width: 992px){
+         @content;
+     }
+}
+ @mixin min-791 {
+     @media only screen and (min-width: 791px){
+         @content;
+     }
+ }
+
+ @mixin min-768 {
+     @media only screen and (min-width: 768px){
+         @content;
+     }
+}
+ @mixin min-567 {
+     @media only screen and (min-width: 567px){
+         @content;
+     }
+ }
+ @mixin min-768-980 {
+    @media only screen and (min-width: 768px) and (max-width: 980px) {
+        @content;
+    }
+}
+@mixin min-662-763 {
+    @media only screen and(min-width: 662px) and (max-width: 763px) {
+        @content;
+    }
+}
+@mixin max-640 {
+    @media only screen and (max-width: 640px) {
+        @content;
+    }
+}
+@mixin min-540{
+    @media only screen and (min-width: 540px) {
+       @content;  
+    }
+}
+@mixin max-540{
+    @media only screen and (max-width: 540px) {
+       @content;  
+    }
+}
+@mixin min-414 {
+    @media only screen and (min-width: 414px){
+        @content;
+    }
+}
+@mixin min-360{
+    @media only screen and (min-width: 360px){
+        @content;
+    }
+}
+@mixin min-320{
+    @media only screen and (min-width:320px){
+        @content;
+    }
+}
+@mixin max-320{
+    @media only screen and (max-width: 320px){
+        @content;
+    }
+}
+
+@mixin min-361 {
+    @media only screen and (min-width: 361px) {
+        @content;
+    }
+}
+
+/**
+ * ================================
+ * Mixin - Responsive Landscape
+ * ================================
+*/
+
+@mixin landscape-min-1270-1450 {
+    @media only screen and (min-width : 1270px) and (max-width : 1450px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-1349 {
+    @media only screen and (max-width : 1349px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-1268-1300 {
+    @media only screen and (min-width : 1268px) and (max-width : 1300px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-1022-1040 {
+    @media only screen and (min-width : 1022px) and (max-width : 1040px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-1025 {
+    @media only screen and (max-width : 1025px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-1025 {
+    @media only screen and (min-width : 1025px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-911-1270 {
+    @media only screen and (min-width : 911px) and (max-width : 1270px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-760-1270 {
+    @media only screen and (min-width : 760px) and (max-width : 1270px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-1025-1100 {
+    @media only screen and (min-width : 1025px) and (max-width : 1100px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-900-1000 {
+    @media only screen and (min-width : 900px) and (max-width : 1000px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-760-1100 {
+    @media only screen and (min-width : 760px) and (max-width : 1100px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-800-830 {
+    @media only screen and (min-width : 800px) and (max-width : 830px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-760-830 {
+    @media only screen and (min-width : 760px) and (max-width : 830px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-830 {
+    @media only screen and (max-width : 830px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-740 {
+    @media only screen and (max-width : 740px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-640-760 {
+    @media only screen and (min-width : 640px) and (max-width : 760px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-640 {
+    @media only screen and (max-width : 640px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-max-540 {
+    @media only screen and (max-width : 540px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+@mixin landscape-min-450-480 {
+    @media only screen and (min-width : 450px) and (max-width : 480px) and (orientation : landscape) {
+        @content;
+    }
+}
+
+/**
+ * ================================
+ * Mixin - Responsive Portrait
+ * ================================
+*/
+
+@mixin portrait-min-1022-1040 {
+    @media only screen and (min-width : 1022px) and (max-width : 1040px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin portrait-min-768-1024 {
+    @media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin portrait-max-800 {
+    @media only screen and (max-width : 800px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin portrait-min-764-800 {
+    @media only screen and (min-width : 764px) and (max-width : 800px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin portrait-max-540 {
+    @media only screen and (max-width : 540px) and (orientation : portrait) {
+        @content;
+    }
+}
+
+@mixin portrait-max-395 {
+    @media only screen and (max-width : 395px) and (orientation : portrait) {
+        @content;
+    }
+}

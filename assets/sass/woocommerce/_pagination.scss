@@ -1,0 +1,107 @@
+.koganic-pagination,
+nav.woocommerce-pagination {
+    border-top: 1px solid #ebebeb;
+    padding-top: 30px;
+
+    .page-numbers {
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            display: inline-block;
+            margin: 0 4px;
+
+            span, a {
+                font-size: 19px;
+                line-height: 1.4;
+                position: relative;
+                color: #010101;
+                background-color: white;
+                font-weight: bold;
+                border: 2px solid;
+                border-color: #ececec;
+                border-radius: 100%;
+                min-width: 48px;
+                min-height: 48px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                transition: all 0.2s linear;
+
+                &:hover {   
+                    @extend .background-color-primary;
+                    @extend .border-color-primary;
+                    color: white;
+                }
+            }
+
+            .current {
+                @extend .background-color-primary;
+                @extend .border-color-primary;
+                color: white;
+            }
+
+            .next,
+            .prev {
+                &:hover {
+                    background-color: white;
+                    border-color: #ececec;
+                }
+            }
+
+            .prev {
+                .fa-angle-left {
+                    &:before {
+                        content: url('assets/images/icons/prev-pagenavi.png');
+                    }
+                }
+
+                &:hover {
+                    .fa-angle-left {
+                        &:before {
+                            content: url('assets/images/icons/prev-pagenavi-active.png');
+                        }
+                    }                    
+                }
+            }
+            
+            .next {
+                .fa-angle-right {
+                    &:before {
+                        content: url('assets/images/icons/next-pagenavi.png');
+                    }
+                }
+
+                &:hover {
+                    .fa-angle-right {
+                        &:before {
+                            content: url('assets/images/icons/next-pagenavi-active.png');
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
+
+nav.woocommerce-pagination {
+    border-top: none;
+    padding-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .shop-action-bottom {
+        .woocommerce-result-count {
+            display: none;
+        }
+
+    }
+
+    nav.woocommerce-pagination {
+        text-align: center;
+        float: none;
+    }
+}

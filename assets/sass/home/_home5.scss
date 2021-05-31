@@ -1,0 +1,188 @@
+.header-5 {
+    .primary-menu {
+        > li {
+            > a {
+                padding: 45px 0;
+            }
+        }
+    }
+
+    .header-logo {
+        .logo_image {
+            img {
+                @include min-1024 {
+                    margin-top: -2px;
+                }
+            }
+        }
+    }
+    
+    .site-header-account {
+        .dropdown-menu {
+            display: none !important;
+        }
+        .header-account {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 2;
+            min-width: 119px;
+            border: 2px solid;
+            border-radius: 50px;
+            text-align: center;
+
+            &:before {
+                content: '';
+            }
+
+            a > span {
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+
+    .header-cart,
+    .header-wishlist {
+        display: inline-flex;
+
+        > a {
+            display: inline-flex;
+        }
+    }
+
+    .header-cart {
+        .cart-count {
+            right: -12px;
+            top: -14px;
+            background-color: #FF3514;
+        }
+
+        > a {
+            position: relative;
+            top: 0;
+        }
+    }
+
+    .search-block {
+        display: inline-flex;
+
+        .header-search {
+            display: inline-flex;
+        }
+
+        .search-button {
+            display: inline-flex;
+        }
+    }
+
+    .wrap-header {
+        .btn-group {
+            &.header-account {
+                &:hover {
+                    .dropdown-menu {
+                        top: calc(100% + 12px);
+                    }
+                }
+            }
+        }
+
+        .header-position {
+            &.menu-nav {
+                @include min-1200 {
+                    flex: 2 1 auto;
+                }               
+            }
+        }
+    }
+    
+    .header-right {
+        .header-block {
+            margin-left: 8px;
+        }
+    }
+
+    .header-action {
+        .phone-style {
+            margin-right: 23px;
+            margin-left: 0;
+        }
+
+        .border-style {
+            border: 2px solid;
+            border-color: #D4D4D4;
+            width: 45px;
+            height: 45px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+        }
+
+        .callphone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 2px solid;
+            border-radius: 50px;
+            min-width: 228px;
+            padding: 6px 10px 5px;
+            color: #FF3514;
+
+            @include min-1270 {
+                top: 1px;
+            }
+
+            span {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 1.4;
+
+                &.phone_in_talk {
+                    font-size: 22px;
+                    margin-right: 9px;
+
+                    &:before {
+                        font-size: 22px;
+                        content: '\e61d';
+                        @extend .material-icons-outlined;
+                        top: 1px;
+                        position: relative;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 911px) {
+    .header-5 {
+        .koganic-menu {
+            &.primary-menu {
+                > li {
+                    &.menu-home {
+                        .dropdown-menu {
+                            transform: translateX(0%);
+                        }
+                    }
+                    &.menu-shop {
+                        .dropdown-menu {
+                            left: 0%;
+                            transform: translateX(0%);
+                        }
+                    }                   
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px){
+    .none-space-xs{
+        display: none;
+    }
+}

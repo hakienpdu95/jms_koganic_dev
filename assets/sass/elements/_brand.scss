@@ -1,0 +1,29 @@
+.jmsbrand-box {
+    .owl-carousel .owl-item {
+        img {
+            display: inline-block;
+            max-width: 100%;
+            width: auto;
+            opacity: .5;
+        }
+        &:hover img{
+            scale: 1.2;
+            opacity: 1;
+        }
+    }
+}
+
+.jmsservice-box {
+    .owl-carousel .owl-item {
+        img {
+            display: inline-block;
+            max-width: 100%;
+            width: auto;
+            opacity: .5;
+        }
+        &:hover img{
+            scale: 1.2;
+            opacity: 1;
+        }
+    }
+}

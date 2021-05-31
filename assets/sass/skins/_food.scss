@@ -1,0 +1,507 @@
+$color-primary-food: #B8D021;
+
+.elementor-element {
+	&.elementor-element-3bdbb56 {
+		@include min-1300 {
+			margin-top: -153px;
+		}
+	}
+
+	&.elementor-element-ef8b528 {
+		.jmsservice-box {
+			.item {
+				position: relative;
+
+				.title-service {
+					position: absolute;
+				    bottom: 12px;
+				    left: 0;
+				    right: 0;
+				    width: 100%;
+				    display: block;
+				    margin-bottom: 0;
+				    font-size: 30px;
+				    font-weight: 600;
+				    color: #FFF;
+				    line-height: 1.8;
+				}
+			}
+
+			.image {
+				border-radius: 15px;
+    			overflow: hidden;
+			}
+
+			img {
+				opacity: 1 !important;
+			}
+		}
+	}
+
+	&.elementor-element-21e8b9b {
+		.addon-title {
+			margin-bottom: 0;
+
+			.title {
+				font-weight: 700;
+				margin-bottom: 41px;
+			}
+		}
+	}
+
+	&.elementor-element-5488afb {
+		background-image: url('assets/images/demo/food-banner-8.png');
+	    background-repeat: no-repeat;
+	    background-position: top center;		
+	    background-size: cover;			
+		display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	    padding-top: 67px;
+	    padding-bottom: 66px;
+	    margin-top: 82px;
+
+	    @include min-1300 {
+	    	min-height: 429px;
+	    	padding-left: 117px;
+	    }
+
+	    > .elementor-container {
+	    	margin: 0;
+	    }
+	}
+
+	&.elementor-element-11ec463 {
+		margin-top: 82px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -225px;
+    		right: 0px;
+			background-image: url('assets/images/demo/icon-leaf-4.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 237px;
+		    height: 337px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+	}
+
+	&.elementor-element-b8921f8 {
+		margin-bottom: 32px;
+	}
+
+	&.elementor-element-1822aae {
+		margin-top: 25px;	
+
+		@include min-1300 {
+			right: -21px;
+		}
+
+		&.elementor-widget-social-icons {
+			.elementor-social-icons-wrapper {
+				> div:not(:last-of-type) {
+					margin-right: 16px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-c69f0a3 {
+		@include min-1300 {
+			margin-top: 77px;
+		}
+
+		ul {
+			font-size: 22px;
+			font-weight: 400;
+			color: #FFF;
+			@extend .default_font;
+			line-height: 1.05;
+			
+			li {
+				&:nth-of-type(1) {
+					font-size: 44px;
+					font-weight: 300;
+
+					strong {
+						font-size: 100px;
+						font-weight: 600;
+					}
+				}
+
+				&:nth-of-type(2) {
+					font-size: 38px;
+					font-weight: 600;
+					margin-bottom: 12px;
+				}
+
+				&:nth-of-type(3) {}
+			}
+		}
+	}
+
+	&.elementor-element-b32ff46 {
+		margin-top: 69px;
+		margin-bottom: 6px;
+
+		hr {
+			border-top: 1px solid #3b3b3d;
+		}
+	}
+
+	&.elementor-element-56c4e13 {
+		font-size: 17px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-8f51dba {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+
+	&.elementor-element-c869814 {
+		padding-top: 90px;
+    	padding-bottom: 90px;
+	}
+
+	&.elementor-element-15eb918 {
+		.jmsservice-box {
+			.item {
+				border: 3px solid #212126;
+	    		border-radius: 20px;
+	    		padding-top: 40px;
+	    		padding-bottom: 37px;
+
+	    		&:hover {
+	    			background-color: #212126;
+	    		}
+
+	    		img {
+	    			opacity: 1;
+	    		}
+
+	    		.image {
+				    margin-bottom: 41px;
+				}
+
+	    		.title-service {
+	    			font-size: 27px;
+	    			font-weight: 700;
+	    			color: white;
+	    			margin-bottom: 16px;
+	    		}
+
+	    		.description {
+	    			font-size: 18px;
+	    			font-weight: 400;
+	    			color: rgba(255,255,255,.7);
+	    			font-style: italic;
+	    			width: 83%;
+	    			margin: 0 auto;
+	    		}
+			}
+		}
+	}
+
+	&.elementor-element-09e8974 {
+		margin-top: 96px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			bottom: 42px;
+    		left: 0;
+			background-image: url('assets/images/demo/icon-leaf-5.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 217px;
+		    height: 273px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}				
+	}
+	
+	&.elementor-element-ea0f034 {
+		img {
+			@include min-1300 {
+				position: relative;
+    			right: -61px;
+			}
+		}
+	}
+
+	&.elementor-element-675d773 {
+		@include min-1300 {
+			margin-top: 30px;
+		}
+
+		.jmstestimonial-box {
+			.addon-title {
+				h3 {
+					font-size: 42px;
+					font-weight: 700;
+					padding-bottom: 0;
+    				margin-bottom: 36px;
+
+					&:after {
+						height: 0;
+					}
+				}
+			}
+		}
+
+		.pt-reviewsbox {
+			display: flex;
+    		flex-direction: column;
+
+    		> .pt-reviewsbox-description {
+    			order: 2;
+    			padding-left: 30px;
+    			margin-top: 29px;
+    			padding-bottom: 0;
+    			
+    			&:after {
+    				content: '';
+				    background-image: url(assets/images/demo/food-quote-1.png);
+				    background-repeat: no-repeat;
+				    background-position: center center;
+				    background-size: contain;
+				    width: 22px;
+				    height: 17px;
+				    position: absolute;
+				    top: 0;
+				    left: 0;
+    			}
+
+    			.pt-content {
+    				@include min-1300 {
+    					max-width: 595px;
+    				}
+
+    				> span {
+    					font-size: 0;
+    					position: relative;
+    					width: 22px;
+    					height: 22px;
+    					display: inline-block;
+    					margin-left: 15px;
+
+    					&:before {
+		    				content: '';
+						    background-image: url(assets/images/demo/food-quote-2.png);
+						    background-repeat: no-repeat;
+						    background-position: center center;
+						    background-size: contain;
+						    width: 22px;
+						    height: 17px;
+						    position: absolute;
+						    top: -12px;
+						    left: 0;    						
+						    display: block;
+    					}
+    				}
+    			}
+    		}
+
+    		> .pt-reviewsbox-author {
+    			order: 1;
+
+    			.pt-img {
+    				width: 80px;
+    				height: 80px;
+    				margin: 0 28px 0 0;
+    			}
+
+    			.pt-title {
+    				display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-items: flex-start;
+				    font-size: 15px;
+
+				    > strong {
+				    	font-size: 22px;
+				    	font-weight: 600;
+				    	color: #FFF;
+
+				    	&:after {
+					    	content: '';
+					    }
+				    }
+    			}
+    		}
+		}
+	}
+
+	&.elementor-element-9f46cfa {
+		background-image: url(assets/images/demo/food-banner-7.jpg);
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+	    padding-top: 75px;
+	    padding-bottom: 77px;
+	    margin-top: 100px;
+
+	    @include min-1300 {
+	    	min-height: 250px;
+	    }
+	}
+
+	&.elementor-element-d929a9f {
+		h5 {
+			display: none;
+		}
+	}
+
+	&.elementor-element-fcd6463 {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+
+	&.elementor-element-fd427b6 {
+		margin-top: 62px;
+	}
+
+	&.elementor-element-0e1352b {
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-78395dc {
+		margin-top: 4px;
+		margin-bottom: 11px;
+	}
+
+	&.elementor-element-53a2613 {
+		margin-top: 71px;
+	}
+}
+
+.home-food {
+	color: white;
+	
+	a {
+		color: white;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $color-primary-food;
+	}
+
+	ul li, 
+	ol li {
+		margin-bottom: 10px;
+	}
+	
+	.koganic-menu {
+		a {
+			color: white;
+		}
+	}
+
+	.jms-tabs-title {
+		ul {
+			li {
+				color: rgba(255,255,255,.5);
+				background-color: rgba(255,255,255,.10);
+				border: none;
+				line-height: 1.4;
+			    padding: 9px 15px 8px;
+			    margin: 0 10px;
+			    min-width: 175px;
+
+			    &.active,
+			    &:hover {
+			    	color: white;
+			    	background-color: $color-primary-food;
+			    }
+			}
+		}
+	}
+
+	form.mc4wp-form {
+		> .mc4wp-form-fields {
+
+			.mc4wp-discount {
+				color: $color-primary-food;
+				font-size: 32px;
+				font-weight: 600;
+			}
+
+			input[type="email"] {
+				&::placeholder { 
+	              color: rgba(255,255,255,.7);
+	              opacity: 1;
+	            }  
+			}
+
+			button[type="submit"] {
+				background-color: $color-primary-food;
+				color: white;
+			}
+		}
+	}
+
+	.footer {
+		li {
+			a:after {
+				height: 0;
+			}
+		}
+	}
+
+	.elementor-widget-text-editor {
+		color: white;
+	}
+}
+
+.footer-1 {
+	padding-top: 49px;
+	padding-bottom: 7px;
+	background-color: #18191A;
+
+	@include min-1300 {
+		padding-top: 99px;			
+	}
+
+	ul.menu {
+		font-weight: 500;
+	}
+	
+	hr {
+	    border-top: 1px solid;
+	    border-color: rgba(255,255,255,.15);
+	}
+
+	.instagram-pic-wrapper {
+		.layout-spacing-20 {
+			.item {
+				padding-left: 7.5px;
+				padding-right: 7.5px;
+
+				.instagram-picture {
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}

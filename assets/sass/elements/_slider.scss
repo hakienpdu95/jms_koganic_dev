@@ -1,0 +1,116 @@
+rs-arrow {
+	&.tparrows {
+		&:hover {
+			&:before {
+				@extend .qodefFadeToRight;
+			}
+		}
+	}
+}
+.rev-btn-arrow {
+	position: relative;
+	@include transition_button_hover;
+	
+	&:after {
+		content: '>';
+	    position: absolute;
+	    /*top: 50%;
+	    transform: translate(-50%, -50%);*/
+	    margin-top: 1px;
+    	right: 16px;
+	    font-size: 23px;
+	    font-weight: 300;
+	}
+
+	&:hover {
+		&:after {
+			-webkit-animation: hoverBtn ease-out 0.3s;
+    		animation: hoverBtn ease-out 0.3s;
+		}
+	}
+}
+
+.rev_slider_wrapper,
+.elementor-widget-wp-widget-rev-slider-widget,
+.elementor-widget-slider_revolution {
+	rs-arrow {
+		@include max-1099 {
+			display: none !important;
+		}
+	}
+	.arrofuex.tparrows {
+		background: #fff !important;
+	    width: 68px !important;
+	    height: 68px !important;
+	    border: 2px solid;
+	    border-color: #ebebeb;
+		border-radius: 50% !important;
+
+		@include portrait-max-540 {
+			display: none !important;
+		}
+		
+		&:before {
+		    width: 16px;
+		    height: 16px;
+		    line-height: 68px !important;	
+		    margin-left: 24px !important;	    
+		}
+
+		&.tp-leftarrow:before {
+		    content: url('assets/images/icons/prev.png') !important;
+		}
+
+		&.tp-rightarrow:before {
+		    content: url('assets/images/icons/next.png') !important;
+		}
+
+		&:hover {
+			&.tp-leftarrow:before {
+			    content: url('assets/images/icons/prev-active.png') !important;
+			}
+			&.tp-rightarrow:before {
+			    content: url('assets/images/icons/next-active.png') !important;
+			}			
+		}
+	}	
+
+	.arrofuex1.tparrows {
+		background: transparent !important;
+	    width: 68px !important;
+	    height: 68px !important;
+	    border: 2px solid;
+	    border-color: #ffffff;
+		border-radius: 50% !important;
+		
+		@include portrait-max-540 {
+			display: none !important;
+		}
+
+		&:before {
+		    width: 16px;
+		    height: 16px;
+		    line-height: 68px !important;	
+		    margin-left: 24px !important;	    
+		}
+
+		&.tp-leftarrow:before {
+		    content: url('assets/images/icons/white-prev.png') !important;
+		}
+
+		&.tp-rightarrow:before {
+		    content: url('assets/images/icons/white-next.png') !important;
+		}
+
+		&:hover {
+			background: #ffffff !important;
+			&.tp-leftarrow:before {
+			    content: url('assets/images/icons/prev-active.png') !important;
+			}
+			&.tp-rightarrow:before {
+			    content: url('assets/images/icons/next-active.png') !important;
+			}			
+		}
+	}	
+}
+

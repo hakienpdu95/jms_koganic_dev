@@ -1,0 +1,80 @@
+/** CerebriSansPro Thin **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Extra-light **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Light **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro (normal) **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Medium **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Semi-bold **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Bold **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Extra-bold **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CerebriSansPro Black **/
+@font-face {
+    font-family: 'Cerebri Sans Pro';
+    src: url('CerebriSansPro-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

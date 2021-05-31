@@ -1,0 +1,42 @@
+.site-dark {
+	.callphone {
+		color: #FFF;
+	}
+	
+	.header-cart {
+		> a {
+			min-width: 47px;
+		}
+		
+		.cart-count {
+			background-color: #FF2626;
+			right: 0;
+		    top: 50%;
+		    transform: translate(0%,-50%);
+		}
+	}
+
+	.owl-theme {
+		.owl-dots {
+			.owl-dot {
+				background-color: rgba(255, 255, 255, .5);
+			}
+		}
+	}
+
+	.jmstestimonial-box {
+		.testimonial-box {
+			color: rgba(255, 255, 255, .7);
+		}
+	}
+
+	.footer-1 {
+		a {
+			color: rgba(255, 255, 255, 0.8);
+
+			&:hover {
+				@extend .color-primary;
+			}
+		}
+	}
+}

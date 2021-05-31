@@ -1,0 +1,248 @@
+.header-7 {
+	.container-fluid.first {
+		.wrap-header {
+			padding-top: 19px;
+    		padding-bottom: 19px;
+		}
+
+		.header-action {
+			.header-cart {
+				@include min-1720 {
+					padding-right: 8px;
+				}
+			}			
+		}
+	}
+
+	.container-fluid.line {
+		border-top: 1px solid #ebebeb;
+
+		@include min-1720 {
+			width: 1760px;
+			margin: 0 auto;
+		}
+	}
+
+	.header-menu.second {
+		.koganic-menu.primary-menu {
+			> li {
+				&:first-of-type {
+					@include min-1445 { 
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		.header-action {
+			.header-block {
+				&.currency {
+					margin-left: 10px;
+
+					> .btn-group {
+						@include min-1300 {
+							padding: 15px 0;
+						}
+
+					    > .currency-dropdown {
+					    	display: flex;
+						    justify-content: center;
+						    align-items: center;
+
+    						span.bg {
+							    background-color: #f5f5f5;
+							    border-radius: 4px;
+							    display: flex;
+							    padding: 6px 10px 4px 10px;
+							    position: relative;
+    						}						    
+					    }				
+					}
+				}
+
+				&.language {
+					.btn-group {
+					    @include min-1300 {
+					    	padding: 15px 0;
+					    }
+
+					    .language-dropdown {
+					    	&:before {
+					    		background-image: url();
+							    width: auto;
+							    height: auto;
+							    transform: unset;
+					    	}
+					    }
+
+						> a {
+							font-size: 0;
+    						display: flex;
+    						padding-left: 0;
+    						
+    						span.bg {
+							    background-color: #f5f5f5;
+							    border-radius: 4px;
+							    display: flex;
+							    padding: 6px 10px 4px 10px;
+							    position: relative;
+							    width: 65px;
+    							height: 32px;
+							    justify-content: flex-end;
+							    
+							    &:before {
+							    	content: '';
+						            position: absolute;
+						            top: 50%;
+						            left: 14px;
+						            background-image: url('assets/images/icons/flag-eng.jpg');
+						            background-repeat: no-repeat;
+						            background-position: center;
+						            background-size: contain;
+						            width: 18px;
+						            height: 11px;
+						            transform: translate(0%, -50%);
+							    }
+    						}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.koganic-menu {
+		&.primary-menu {
+			> li {
+				> a {
+				    padding: 29.5px 0;
+				}
+			}
+		}
+	}
+
+	#header-search-7 {
+		.woo-ajaxsearchform-container {
+			.ui.icon.input {
+				input {
+					border: 1px solid #f1f1f1;
+				    border-radius: 30px;
+				    background: #f5f5f5;
+				    font-size: 13px;
+				    font-weight: 400;
+				    color: #777777;
+				    height: 46px;
+				    padding-left: 48px;
+    				padding-right: 10px !important;
+
+    				@include min-1280 {
+    					min-width: 390px;    
+					}
+    			}
+			}
+
+			.ui.search {
+				#woo-searchsubmit {
+					background-size: 22px 22px;
+				    right: auto;
+				    left: 10px;
+				    top: 1px;
+				}
+			}
+		}
+
+		.ui.woo-loading.search .input>i.icon {
+			&:before,
+			&:after {
+				width: 20px;
+    			height: 20px;
+    			top: calc(50% + 7px);
+			    left: auto;
+			    right: 10px;
+			}
+
+			&:before {
+				border: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			&:after {
+				border-width: 1px;
+			}
+		}
+	}
+
+	.header-menu {
+		.header-right {
+			.socials {
+				display: inline-flex;
+
+				&:hover {
+					i {
+						color: #b3b3b3;
+					}
+				}
+			}
+
+			.social-list-icons {
+			  	display: inline-flex;
+				
+				li {
+					margin-bottom: 0;
+					display: inline-flex;
+
+		            &.sc-facebook {
+		                a:hover {
+		                    i {
+		                    	color: #3b5998;
+		                    }
+		                }
+		            }
+		            &.sc-twitter {
+		                a:hover {
+		                    i {
+		                    	color: #1DA1F2;;
+		                    }
+		                }
+		            }
+		            &.sc-behance {
+		                a:hover {
+		                    i {
+		                    	color: #191919;
+		                    }
+		                }
+		            }
+		            &.sc-instagram {
+		                a:hover {
+		                    i {
+		                    	color: #405DE6;
+		                    }
+		                }
+		            } 
+
+					a {
+						padding: 12px;
+						padding-bottom: 0;
+						padding-top: 0;
+    					display: inline-flex;
+					}
+
+					&:last-of-type {
+						a {
+							padding-right: 4px;
+						}
+					}
+				}
+			}
+		}
+
+		.header-action i {
+			color: #b3b3b3;
+		    top: 0;
+		    font-size: 18px;
+
+		    &:hover {
+		    	@extend .color-primary;
+		    }
+		}
+	}
+}

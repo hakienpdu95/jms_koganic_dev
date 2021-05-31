@@ -1,0 +1,111 @@
+.page-heading {
+    background-color: #f0f0f0;
+
+    &.title-shop {
+        .woocommerce-breadcrumb ~ .breadcrumb,
+        .breadcrumb {
+            display: none;
+        }
+    }
+
+    .entry-header{
+        position: relative;
+    }
+
+    .subtitle-page{
+        margin-bottom: 20px;
+        
+    }
+
+    // Title size
+    &.title-size-default {
+        padding-top: 63px;
+        padding-bottom: 74px;
+    }
+
+    &.title-size-small {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h1 {
+            font-size: 27px;
+        }
+    }
+
+    &.title-size-medium {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    &.title-size-large {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+
+    //Title align
+    &.title-align-left {
+        text-align: left;
+    }
+
+    &.title-align-centered {
+        text-align: center;
+    }
+
+    &.title-align-right {
+        text-align: right;
+    }
+
+    &.title-align-vertical {
+        .breadcrumb, .woocommerce-breadcrumb{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -12px;
+        }
+        .subtitle-page{
+            margin-bottom: 0;
+        }
+    }
+
+    h1 {
+        margin: 0;
+        line-height: 1.4;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    a{
+        
+
+        &:hover{
+            @extend .color-primary;
+        }
+    }
+}
+
+.pt-breadcrumb {
+    background-color: #f8f8f8;
+
+    a {
+          
+    }
+}
+.breadcrumb,
+.woocommerce-breadcrumb {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 0;
+    
+    font-weight: 400;
+    line-height: 1.4;
+    background-color: transparent;
+    margin-top: 10px;
+    
+    span:before{
+        content:"/";
+        margin: 0 5px;
+    }
+}

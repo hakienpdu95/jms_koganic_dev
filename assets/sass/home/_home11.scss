@@ -1,0 +1,139 @@
+.header-11 {
+    .koganic-menu {
+        .dropdown-menu {
+            @include min-1300 {
+                margin-top: 0px;
+            }
+        }
+    }
+    
+    .container-fluid.first {
+        .wrap-header {
+            padding-top: 19px;
+            padding-bottom: 19px;
+        }
+
+        .header-action {
+            .header-11-navigation {
+                ol, ul {
+                    margin-bottom: 0;
+                }
+
+                .koganic-menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    font-size: 13px;
+                    text-transform: uppercase;
+
+                    @include min-1280 {
+                        margin-top: 3px;
+                    }
+
+                    > li {
+                        padding: 0 14px;
+
+                        &:last-of-type {
+                            @include min-1280 {
+                                padding-right: 3px;
+                            }
+                        }
+                    }
+
+                    .menu-item-link {
+                        
+                        
+                        &:hover {
+                            @extend .color-primary;
+                        }
+                    }
+                }
+            }
+
+            .header-cart {
+                @include min-1720 {
+                    padding-right: 8px;
+                }
+            }           
+        }
+    }
+
+    .container-line {
+        border-top: 1px solid #ebebeb;
+    }
+
+    .header-menu.second {
+        .koganic-menu.primary-menu {
+
+        }
+    }
+
+    .koganic-menu {
+        &.primary-menu {
+            > li {
+                > a {
+                    padding: 22.5px 0;
+                }
+            }
+        }
+    }
+
+    #header-search-11 {
+        .woo-ajaxsearchform-container {
+            .ui.icon.input {
+                input {
+                    border: none;
+                    border-radius: 30px;
+                    background: transparent;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #777777;
+                    height: 46px;
+                    padding-left: 32px;
+                    padding-right: 10px !important;
+
+                    @include min-1280 {
+                        min-width: 390px;    
+                    }
+                }
+            }
+
+            .ui.search {
+                #woo-searchsubmit {
+                    background-size: 22px 22px;
+                    background-position: center left;
+                    right: auto;
+                    left: 0;
+                    top: 1px;
+                }
+            }
+        }
+
+        .ui.woo-loading.search .input>i.icon {
+            &:before,
+            &:after {
+                width: 20px;
+                height: 20px;
+                top: calc(50% + 7px);
+                left: auto;
+                right: 10px;
+            }
+
+            &:before {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            &:after {
+                border-width: 1px;
+            }
+        }
+    }
+
+    .header-menu {
+        .wrap-header {
+            &.menu-header-11 {
+                justify-content: center;
+            }
+        }
+    }
+}

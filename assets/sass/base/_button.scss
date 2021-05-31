@@ -1,0 +1,293 @@
+/** ------------------------------------------------------------------------------------------------
+* BUTTONS
+* ------------------------------------------------------------------------------------------------ */
+.btn,
+.button,
+button,
+.added_to_cart,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    @extend .btn-size-default;
+	position: relative;
+	display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+	outline: 0;
+    font-weight: 700;
+	border: 0;
+	vertical-align: middle;
+	cursor: pointer;
+    background-color: #f3f3f3;
+    color: #888;
+    line-height: 45px;
+    border-radius: 0;
+    padding: 0 30px;
+    
+	@include transition_button_hover;
+
+    &.font-size-17 {
+        font-size: 17px;
+    }
+
+    &.font-size-20 {
+        font-size: 20px;
+    }
+
+    &.fw-400 {
+        font-weight: 400;
+    }
+
+	i {
+		margin-left: 3px;
+	}
+
+	&:hover, &:focus {
+        outline: 0;
+	}
+
+    
+    &.btn-color-default {
+        background-color: #f3f3f3;
+        color: #888;
+
+
+    }
+
+    &.btn-color-primary {
+        @extend .background-color-primary;
+        color: white;
+        &:hover{
+            color: black !important;
+        }
+    }
+
+    &.btn-color-alt {
+        background-color: #fbbc34;
+        color: white;
+    }
+
+    &.btn-color-black {
+        background-color: #212121;
+        color: white;
+
+        &:hover,
+        &:focus {
+            background-color: #888;
+            color: white;
+            box-shadow: none;
+        }
+    }
+
+    &.btn-color-white {
+        background-color: white;
+
+        &:hover, &:focus {
+            background-color: white;
+            box-shadow: none;
+            border-color: transparent;
+        }
+    }
+
+    // BTN-STYLE
+
+    &.btn-style-bordered {
+        background-color: transparent;
+        border: 2px solid #888;
+
+        &:hover,
+        &:focus {
+            background-color: #888;
+            border-color: #888;
+            color: white;
+            box-shadow: none;
+        }
+
+        &.btn-color-alt {
+            color: #fbbc34;
+            border-color: #fbbc34;
+
+            &:hover,
+            &:focus {
+                background-color: #fbbc34;
+                color: white;
+                border-color: #fbbc34;
+            }
+        }
+
+        &.btn-color-black {
+            color: #000;
+            border-color: #888;
+
+            &:hover,
+            &:focus {
+                background-color: #888;
+                color: white;
+                border-color: #888;
+            }
+        }
+
+        &.btn-color-white {
+            color: white;
+            border-color: white;
+
+            &:hover,
+            &:focus {
+                background-color: white;
+                color: #3E3E3E;
+                border-color: white;
+            }
+        }
+    }
+
+    &.btn-style-rounded {
+        border-radius: 35px;
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+        }
+    }
+
+    &.btn-style-3d {
+        border: none;
+        @include transition(all 0.25s ease);
+        box-shadow: inset 0 -2px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover,
+        &:focus {
+            opacity: 0.8;
+            box-shadow: inset 0 -2px 0px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+
+}
+
+.btn.active, .btn:active{
+    box-shadow: none !important;
+}
+
+.btn-transparent {
+    border: 2px solid #888;
+    background-color: transparent !important;
+
+    &:hover {
+        @extend .border-color-primary;
+        @extend .background-color-primary;
+        color: white;
+    }
+}
+
+#place_order {
+    width: 100%;
+    font-size: 13px;
+    font-weight: 800;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+.checkout-button,
+.coupon .button,
+.checkout_coupon .button,
+.actions .update-cart,
+#place_order,
+#customer_login .button {
+    @extend .background-color-primary;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    
+
+    &:hover, &:focus {
+        color: white;
+        background-color: black;
+    }
+}
+
+.btn-full-width {
+    width: 100%;
+}
+
+.background-hover-button a{
+    
+}
+
+/* button */
+.btn {
+  @extend .background-color-primary;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  padding-left: 21px;
+  padding-right: 21px;
+  line-height: 44px;
+  font-weight: 800;
+  height: 44px;
+  border: none;
+  outline: none;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; 
+
+  &:hover {
+        background: #333333;
+        color: #ffffff;
+        outline: none;
+  }
+}
+
+.btn {
+    &.btn-border {
+        background: transparent;
+        position: relative;
+        
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: capitalize;
+        border: none;
+        height: 44px;
+        padding-left: 29px;
+        padding-right: 29px;
+        letter-spacing: inherit;   
+        
+        &:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ebebeb;
+            -webkit-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        &:hover {
+            background: transparent;
+            
+            border-color: #333333;
+
+            &:before {
+                border-width: 2px;
+                border-color: #333333;
+            }
+        }   
+    }
+}

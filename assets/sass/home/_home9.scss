@@ -1,0 +1,189 @@
+
+body {
+	&.display-menu {
+		.header-9 {
+			&.header-fullwidth {
+				box-shadow: 2px 0 7px rgba(0, 0, 0, 0.07);
+
+				.header-menu {
+					@include min-1300 {
+						opacity: 1;
+						visibility: visible;
+					}
+				}
+
+				.header-logo {
+					.logo_image {
+						img {
+
+						}
+					}
+				}
+
+				.header-block {
+					&.account-icon,
+					&.cart-text {
+						opacity: 0;
+						visibility: hidden;
+					}
+				}
+			}
+		}
+
+		.header-navigation.nav-header-9 {
+			.icons {
+				&.icon-menu:before {
+					background-image: url(assets/images/icons/icon-close.png);
+				    width: 15px;
+				    height: 15px;
+				}
+			}
+		}
+
+		.elementor-element {
+			&.elementor-element-026baa8 {
+				> .elementor-element-populated {
+					z-index: 999;
+				}
+			}
+		}
+	}
+}
+
+.header-9 {
+	&.header-fullwidth {
+	    width: 100%;
+	    z-index: 8888;
+	    transition: all .1s ease-in-out;
+		background-color: white;
+		border-bottom: 1px solid #ebebeb;
+		
+		@include min-1300 {
+	    	min-height: 124px;
+			position: fixed;
+		    top: 0;	    	
+		    border-bottom: none !important;
+		}
+
+		~ .page-content {
+			@include min-1300 {
+				margin-top: 124px;
+			}
+		}
+
+		> .container {
+			@include min-1720 {
+				width: 100%;
+			    padding-left: 60px;
+			    padding-right: 60px;
+			}
+		}
+
+		.header-logo {
+			.logo_image {
+				img {
+					@include min-1280 {
+						margin-top: -2px;
+					}
+				}
+			}
+		}
+
+		.koganic-menu {
+			&.primary-menu {
+				> li {
+					> a {
+						@include min-1300 {
+							padding: 54px 0 55px;
+						}
+					}
+				}
+			}
+		}
+
+		.header-menu {
+			&.header-position {
+				transition: all 0.2s;
+				
+				@include min-1300 {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+		}
+
+		.header-block {
+			&.account-icon,
+			&.cart-text {
+				transition: all 0.2s;
+			}
+		}
+
+		.header-action {
+			
+    		line-height: 1.4;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+			
+			.header-block {
+			    @include min-1200 {
+			    	margin-left: 35px;
+			    }
+			}
+
+			.account-icon {
+				.koganic-login {
+					a {
+						font-size: 14px;
+					    font-weight: 600;
+					    color: #333;
+
+					    &:hover {
+							@extend .color-primary;
+						}
+					}
+				}
+			}
+
+			.header-cart {
+				display: flex;
+			    justify-content: center;
+			    align-items: center;
+				
+				> a {
+					font-size: 14px;
+					font-weight: 600;
+					top: unset;
+					
+					&:hover {
+						@extend .color-primary;
+					}
+
+					&:before {
+					    content: '';
+					}
+				}
+			}
+
+			.nav-header-9 {
+				&.header-navigation {
+					display: none;
+
+					@include min-1300 {
+						display: inline-block;
+					}
+
+					.btn-nav {
+						width: 24px;
+    					height: 16px;
+					}
+
+					.icons {
+						top: 0;
+					}
+				}
+			}
+		}
+	}
+}

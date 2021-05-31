@@ -1,0 +1,385 @@
+.product-box{
+	position: relative;
+	.hover-image{
+		position: absolute;
+	}
+}
+
+
+// Effect product image thumbnail
+// Default
+.effect-thumb-1{
+    .product-box{
+        .hover-image {
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+        }
+        &:hover {
+            .hover-image {
+                opacity: 1;
+                @include transform(scale(1.09));
+            }
+        }
+    }
+}
+// Top to bottom
+.effect-thumb-2{
+    .product-box{
+        .hover-image {
+            left: 0;
+            top:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                top: 0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// bottom to top
+.effect-thumb-3{
+    .product-box{
+        .hover-image {
+            left: 0;
+            bottom:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                bottom: 0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Right to left
+.effect-thumb-4{
+    .product-box{
+        .hover-image {
+            right: -100%;
+            top: 0;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                right:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Left to right
+.effect-thumb-5{
+    .product-box{
+        .hover-image {
+            left: -100%;
+            top: 0;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                left:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Top left to right bottom
+.effect-thumb-6{
+    .product-box{
+        .hover-image {
+            top: -100%;
+            left:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                top: 0;
+                left:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Top right to bottom left
+.effect-thumb-7{
+    .product-box{
+        .hover-image {
+            top: -100%;
+            right:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                top: 0;
+                right:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Right bottom to top right
+.effect-thumb-8{
+    .product-box{
+        .hover-image {
+            right: -100%;
+            bottom:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                bottom: 0;
+                right:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// Left bottom to top right
+.effect-thumb-9{
+    .product-box{
+        .hover-image {
+            left: -100%;
+            bottom:-100%;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                bottom: 0;
+                left:0;
+                @extend .transition4;
+            }
+        }
+    }
+}
+// scale
+.effect-thumb-10{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            @include transform(scale(0));
+        }
+        &:hover {
+            .hover-image {
+                @include transform(scale(1));
+                @extend .transition4;
+            }
+        }
+    }
+}
+//scale rotate
+.effect-thumb-11{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            opacity:0;
+            @include transform(scale(0));
+            @include transform(rotate(180deg));
+        }
+        &:hover {
+            .hover-image {
+                opacity:1;
+                @include transform(scale(1));
+                @include transform(rotate(0deg));
+                @extend .transition4;
+            }
+        }
+    }
+}
+//skew Y rotate
+.effect-thumb-12{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            opacity:0;
+            @include transform(skewY(20deg));
+        }
+        &:hover {
+            .hover-image {
+                opacity:1;
+                @include transform(skewY(0deg));
+                @extend .transition4;
+            }
+        }
+    }
+}
+//skew X rotate
+.effect-thumb-13{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            opacity:0;
+            @include transform(skewX(20deg));
+        }
+        &:hover {
+            .hover-image {
+                opacity:1;
+                @include transform(skewX(0deg));
+                @extend .transition4;
+            }
+        }
+    }
+}
+
+//Skew
+.effect-thumb-14{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            opacity:0;
+            @include transform(rotateY(90deg));
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                opacity:1;
+                @include transform(rotateY(0deg));
+                @extend .transition4;
+            }
+        }
+    }
+}
+
+// none effect
+.effect-thumb-15{
+    .product-box{
+        .hover-image {
+            top: 0;
+            right:0;
+            opacity:0;
+            @extend .transition4;
+        }
+        &:hover {
+            .hover-image {
+                opacity:1;
+                @extend .transition4;
+            }
+        }
+    }
+}
+
+
+// Product preset
+
+.product-preset-ecf0f1 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.product-preset-1abc9c {
+    .product-thumb {
+        > a:after {
+            background: rgba(0, 0, 0, 0.45);
+        }
+    }
+}
+.product-preset-2e2e2e {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+}
+.product-preset-2ecc71 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(46, 204, 113, 0.85);
+        }
+    }
+}
+.product-preset-7f8c8d {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(127, 140, 141, 0.85);
+        }
+    }
+}
+.product-preset-9b59b6 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(155, 89, 182, 0.85);
+        }
+    }
+}
+.product-preset-95a5a6 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(149, 165, 166, 0.85);
+        }
+    }
+}
+.product-preset-01558f {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(1, 85, 143, 0.85);
+        }
+    }
+}
+.product-preset-3498db {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(52, 152, 219, 0.85);
+        }
+    }
+}
+.product-preset-bdc3c7 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(189, 195, 199, 0.85);
+        }
+    }
+}
+.product-preset-c0392b {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(192, 57, 43, 0.85);
+        }
+    }
+}
+.product-preset-d35400 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(211, 84, 0, 0.85);
+        }
+    }
+}
+.product-preset-e67e22 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(230, 126, 34, 0.85);
+        }
+    }
+}
+.product-preset-e74c3c {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(231, 76, 60, 0.85);
+        }
+    }
+}
+.product-preset-f39c12 {
+    .product-thumb {
+        > a:after {
+            background-color: rgba(243, 156, 18, 0.85);
+        }
+    }
+}
+.product-preset-none {
+    .product-thumb {
+        > a:after {
+            background:none;
+        }
+    }
+}

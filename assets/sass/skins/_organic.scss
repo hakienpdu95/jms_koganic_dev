@@ -1,0 +1,583 @@
+$organic-color-primary: #70C03F !default;
+$organic-color-body: #3F2803 !default;
+
+.home-organic {
+	.header-account {
+		&:before {
+			color: $organic-color-body;
+		}
+	}
+
+	.header-cart {
+		.cart-count {
+			background-color: #F1402A;
+		}
+	}
+
+	.owl-theme {
+		.owl-dots {
+			.owl-dot {
+				background-color: $organic-color-primary;
+
+				&:not(.active) {
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
+
+.elementor-element {
+	&.elementor-element-b7983ff {
+		margin-bottom: 68px;
+		margin-top: 85px;
+
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 6px;
+
+			.banner-text {
+				@include min-1300 {
+					padding-left: 56px;
+				}
+			}
+
+			.title {
+				p > span {
+					font-size: 50px;
+					font-weight: 400;
+					@extend .default_font02;
+				}
+			}
+
+			.subtitle {
+				@include min-1300 {
+					margin-top: -7px;
+				}
+			}
+
+			.button-banner-wrapper {
+			    margin-top: 27px;
+			}
+		}
+
+		.button-banner {
+			line-height: 1.45;
+
+			&:after {
+				bottom: 0;
+			}
+		}
+	}
+
+	&.elementor-element-2b7012e {
+		.title {
+			span {
+				color: white !important;
+			}
+		}
+	}
+
+	&.elementor-element-b08a036 {
+		.title {
+			span {
+				color: #F1402A !important;
+			}
+		}
+	}
+
+	&.elementor-element-09356a2 {
+		background-image: url('assets/images/demo/organic-banner-3.png');
+        background-repeat: no-repeat;
+        background-position: center center;		
+        /*background-attachment: fixed;*/
+        background-size: 100% 100%;
+        padding-top: 77px;
+        padding-bottom: 111px;
+        margin-bottom: 48px;
+
+        @include min-1300 {
+        	min-height: 763px;
+        }
+	}
+
+	&.elementor-element-b2b9751 {
+		margin-bottom: 12px;
+		
+		@include min-1300 {
+			max-width: 600px;
+		}
+
+		.title {
+			font-size: 60px;
+			font-weight: 700;
+			color: white;
+			line-height: 1.22;
+			margin-bottom: 0;
+		}
+	}
+
+	&.elementor-element-d2a5035 {
+		font-size: 19px;
+		font-weight: 400;
+		font-style: italic;
+		color: white;
+		margin-bottom: 37px;
+
+		p {
+			margin-top: 0;
+
+			@include min-1300 {
+				max-width: 600px;
+			}
+		}
+	}
+
+	&.elementor-element-9bc2057 {
+		.elementor-button {
+			font-size: 20px;
+    		font-weight: 700;
+    		color: $organic-color-primary;
+    		border: 2px solid;
+    		border-color: #FFF;
+    		background-color: white;
+    		padding: 11px 10px;
+		    min-width: 192px;
+		    text-align: center;
+		    line-height: 1.4;
+		    border-radius: 50px;
+
+		    &:hover {
+		    	background-color: transparent;
+		    	color: #FFF;
+		    }
+		}
+	}
+
+	&.elementor-element-ded05a5 {
+		.tc {
+			@include min-1300 {
+				text-align: left;
+			}
+		}
+
+		.image {
+			margin-bottom: 19px;
+		}
+
+		.title-service {
+			font-size: 27px;
+			font-weight: 700;
+			color: white;
+			margin-bottom: 3px;
+		}
+
+		.description {
+			font-size: 19px;
+		    color: white;
+		    font-weight: 400;
+		    font-style: italic;
+		    margin-top: 0;
+		}
+
+		.jmsservice-box {
+			@include min-1300 {
+				max-width: 850px;
+			}
+
+			.owl-carousel {
+				.owl-item {
+					img {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-9064f44 {
+		margin-top: 42px;
+	}
+
+	&.elementor-element-014d824 {
+		> .elementor-element-populated {
+			margin-top: 42px;
+
+			@include min-1300 {
+				max-width: 910px;
+			}
+		}
+	}
+
+	&.elementor-element-25fe5b1 {
+		@include min-1300 {
+			margin-top: 21px;
+		}
+
+		h5 {
+			color: #3F2803;
+		}
+
+		ul.menu {
+			font-weight: 500;
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			
+			li {
+				margin-bottom: 9px;
+			}
+
+			a {
+				color: rgba(63,40,3,.7);
+			}
+		}
+	}
+
+	&.elementor-element-cdee0f3 {
+		@include min-1300 {
+			margin-top: 21px;
+		}
+
+		h5 {
+			color: #3F2803;
+		}
+
+		ul.menu {
+			font-weight: 500;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-flex-flow: wrap column;
+		    flex-flow: wrap column; 
+			
+			@include min-1300 {
+				max-height: 200px;
+			}
+
+			li {
+				margin-bottom: 9px;
+			}
+
+			a {
+				color: rgba(63,40,3,.7);
+			}
+		}		
+	}
+
+	&.elementor-element-f89030f {
+		margin-bottom: 25px;
+	}
+
+	&.elementor-element-d732d85 {
+		margin-bottom: 18px;
+		@extend .default_font;
+
+		ul {
+			font-size: 16px;
+			font-weight: 400;
+			position: relative;
+			margin-bottom: 0;
+			padding-left: 53px;
+
+			&:before {
+				content: '';
+				background-image: url('assets/images/demo/organic-icon-headset-mic.png');
+		        background-repeat: no-repeat;
+		        background-position: center center;		
+		        background-size: contain;
+		        width: 38px;
+		        height: 46px;
+		        display: inline-block;
+			    position: absolute;
+			    left: 0;
+			    top: 4px;
+			}
+
+			li {
+				margin-bottom: 3px;
+
+				&:nth-of-type(2) {
+					font-size: 20px;
+					font-weight: 700;
+					color: #F1402A;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-b32566c {
+		margin-bottom: 9px;
+		@extend .default_font;
+		color: rgba(63,40,3,.7);
+
+		ul {
+			font-size: 16px;
+    		font-weight: 500;
+
+			li {
+				margin-bottom: 9px;
+			}
+		}
+	}
+
+	&.elementor-element-5e69558 {
+		margin-top: 58px;
+    	margin-bottom: 3px;
+
+    	hr {
+    		border-top: 1px solid #E8E8E8;
+    	}
+	}
+
+	&.elementor-element-e16f1cd {
+		font-size: 18px;
+		font-weight: 500;
+		color: $organic-color-body;
+		@extend .default_font;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-cfc57b0 {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+
+	&.elementor-element-fa6e47a {
+		margin-bottom: 70px;
+
+		.blog-design-slider {
+			.blog-title {
+			    text-transform: capitalize;
+			}
+		}		
+	}
+
+	&.elementor-element-b5b9275 {
+		margin-bottom: 80px;
+	}
+
+	&.elementor-element-494f263 {
+		background-image: url('assets/images/demo/organic-newsletter-bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;		
+        background-size: 100% 100%;
+       	padding: 40px 15px;
+        padding-top: 40px;
+    	padding-bottom: 40px;
+    	border-radius: 10px;
+
+        > .elementor-widget-container {
+        	> h5 {
+        		display: none;
+        	}
+        }
+
+        .mc4wp-form-fields {
+        	@include min-1280 {
+        		justify-content: space-evenly;
+        	}
+
+        	.mc4wp-discount {
+        		color: white;
+        		font-size: 32px;
+        		font-weight: 600;
+        	}
+
+        	input[type="email"] {
+        		border: 2px solid #FFF;
+			    min-width: 495px;
+			    color: white;
+
+			    &::placeholder { 
+	            	color: rgba(255,255,255,1);
+	            	opacity: 1;
+	            }
+        	}
+
+        	button[type="submit"] {
+        		background-color: white;
+        		color: $organic-color-primary;
+        		min-width: 160px;
+        		margin-left: 25px;
+
+        		&:hover {
+        			background-color: #333;
+        			color: white;
+        		}
+        	}
+        }
+	}
+
+	&.elementor-element-3d4a287 {
+		margin-bottom: 32px;
+	}
+
+	&.elementor-element-a0a49e2 {
+		.item-wrap {
+			.product-item {
+				margin-bottom: 50px;
+			}
+		}
+
+		.addon-title {
+			.title {
+				font-size: 42px;
+				font-weight: 700;
+				color: $organic-color-primary;
+				margin-bottom: 2px;
+			}
+		}
+
+		.jms-tabs-title {
+			margin-bottom: 32px;
+			
+			ul {
+				li {
+					color: rgba(63, 40, 3, 0.5);
+
+					&.active,
+					&:hover {
+						color: $organic-color-primary;
+					}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-759c89e {
+		margin-bottom: 68px;
+	}
+	
+	&.elementor-element-8f0aeb1 {
+		margin-bottom: 40px;
+	}
+
+	&.elementor-element-6dcc137 {
+		box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
+		margin-bottom: 80px;
+		padding-bottom: 97px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: -145px;
+    		left: 30px;
+			background-image: url('assets/images/demo/icon-leaf-1.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 234px;
+		    height: 277px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: -4px;
+    		right: 64px;
+			background-image: url('assets/images/demo/icon-leaf-2.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 193px;
+		    height: 156px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}		
+	}
+
+	&.elementor-element-6d76608 {
+		&:after {
+			content: '';
+			position: absolute;
+			left: 16%;
+    		bottom: -215px;
+			background-image: url('assets/images/demo/icon-leaf-3.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 205px;
+		    height: 223px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+	}
+
+	&.elementor-element-6156297 {
+		.addon-title {
+			margin-bottom: 0;
+
+			h3 {
+				font-size: 42px;
+				font-weight: 700;
+				color: $organic-color-primary;
+
+				&:after {
+					height: 0;
+				}
+			}
+		}
+
+		.testimonials-style-boxed {
+			@include min-1300 {
+				max-width: 890px;
+    			margin: 0 auto;
+			}
+
+			.pt-img {
+				display: none;
+			}
+
+			.pt-reviewsbox-description {
+				&:after {
+					background-image: url(assets/images/demo/icon-quote-2.png);
+				}
+			}
+		}
+	}
+
+	&.elementor-element-91a07e0 {
+		margin-bottom: 80px;
+	}
+
+	&.elementor-element-58c27f2 {
+		margin-bottom: 32px;
+	}
+
+	&.elementor-element-e1ebd16 {
+		margin-bottom: 40px;
+	}
+}
+
+.footer-4 {
+	background-image: url('assets/images/demo/organic-footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;		
+    /*background-attachment: fixed;*/
+    background-size: 100% 100%;
+    padding-top: 119px;
+    padding-bottom: 64px;
+
+    @include min-1300 {
+    	/*min-height: 622px;*/
+    }		
+}

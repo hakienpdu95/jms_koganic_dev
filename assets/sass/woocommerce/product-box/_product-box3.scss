@@ -1,0 +1,182 @@
+.product-style-3{
+    .ImageOverlayCa {
+        background-color: #fff;
+        height: 100%;
+        left: 0;
+        top: 0%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .product-box {
+        text-align: left;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+
+        .product-info {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 0 15px;
+            padding-bottom: 29px;
+            margin: 0;
+
+            @include min-1300 {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .product-cat {
+                margin-top: 21px;
+            }
+
+            .woocommerce-LoopProduct-link {
+                margin-top: 4px;
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            .el-price {
+                @include portrait-max-540 {
+                    min-height: 30px;
+                }
+            }
+        }
+        
+        .star-rating {
+            margin-top: 4px;
+
+            + .el--style-3 {
+                margin-top: 19px;
+            }
+        }
+
+        .price {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: 700;
+            min-height: auto;
+            margin-left: 9px;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;     
+            line-height: 1;
+            
+            del {
+                margin-right: 8px;
+            }       
+        }
+    }
+
+    .el--style-3 {
+        margin-top: 14px;
+        
+        &:hover {
+            .button-in {
+                &.quickshop {
+                    display: inline-flex;
+                }
+            }
+
+            .price {
+                display: none !important;
+            }
+
+            .loop-add-to-cart {
+                .tooltip {
+                    display: inline-flex;
+                    transform: translate(0,0) scale(1,1);
+                }
+
+                .button-cart {
+                    padding-right: 15px;
+                }                
+            }
+        }
+
+        .btn-quickview {
+            font-size: 0;
+            line-height: 1;
+            background-color: transparent;
+            width: 100%;
+            height: 100%;
+            line-height: inherit;
+            @extend .color-primary;
+        }
+    }
+
+    .product-group-button {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+        .loop-add-to-cart {
+            .button {
+                text-transform: none;
+                padding: 0;
+                line-height: 1.4;
+                font-weight: 600;
+                color: rgba(255,255,255,1);
+            }
+
+            .button-cart {
+                width: auto;
+                min-width: 38px;
+                height: 38px;
+                padding-left: 38px;
+                text-align: left;
+                position: relative;
+                border-radius: 30px;
+                transition: 550ms ease 0s;
+                @extend .background-color-primary;
+
+                &:before {
+                    content: '\e145';
+                    @extend .material-icons-outlined;
+                    line-height: 38px;
+                    transition: none;
+                    display: inline;
+                    position: absolute;
+                    z-index: 10;
+                    left: 8px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .button-in {
+            &.quickshop {
+                min-width: 38px;
+                height: 38px;
+                justify-content: center;
+                align-items: center;
+                background-color: #F8F8F8;
+                border-radius: 30px;
+                margin-left: 10px;
+                display: none;
+            }
+        }
+
+        .tooltip {
+            position: relative;
+            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1;
+            color: rgba(255,255,255,1);
+            padding: 0;
+            z-index: 0;
+            opacity: 1;
+            display: none;
+            transition: 450ms ease 0s;
+            @extend .default_font;
+
+            &:before {
+
+            }
+        }
+    }
+}

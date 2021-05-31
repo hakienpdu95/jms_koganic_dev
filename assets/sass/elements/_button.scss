@@ -1,0 +1,249 @@
+.koganic-button-wrapper {
+    position: relative;
+    z-index: 9;
+    a{
+        display: inline-block;
+        border-color: #888;
+        color: #444;
+        &:hover,
+        &:focus{
+            color: #fff;
+            @extend .color-primary;
+            @extend .background-color-primary;
+        }
+    }
+}
+
+//Color-button
+.button-color-blue a,
+.button-color-hover-blue a:hover{
+    color: #5472d2 !important;
+}
+.button-color-turquoise a,
+.button-color-hover-turquoise a:hover{
+    color: #00c1cf !important;
+}
+.button-color-pink a,
+.button-color-hover-pink a:hover{
+    color: #fe6c61 !important;
+}
+.button-color-violet a,
+.button-color-hover-violet a:hover{
+    color: #8d6dc4 !important;
+}
+.button-color-peacoc a,
+.button-color-hover-peacoc a:hover{
+    color: #4cadc9 !important;
+}
+.button-color-chino a,
+.button-color-hover-chino a:hover{
+    color: #cec2ab !important;
+}
+.button-color-mulled-wine a,
+.button-color-hover-mulled-wine a:hover{
+    color: #50485b !important;
+}
+.button-color-vista-blue a,
+.button-color-hover-vista-blue a:hover{
+    color: #75d69c !important;
+}
+.button-color-black a,
+.button-color-hover-black a:hover{
+    color: #333333 !important;
+}
+.button-color-grey a,
+.button-color-hover-grey a:hover{
+    color: #ebebeb !important;
+}
+.button-color-orange a,
+.button-color-hover-orange a:hover{
+    color: #f7be68 !important;
+}
+.button-color-sky a,
+.button-color-hover-sky a:hover{
+    color: #5aa1e3 !important;
+}
+.button-color-green a,
+.button-color-hover-green a:hover{
+    color: #7cbb2c !important;
+}
+.button-color-juicy-pink a,
+.button-color-hover-juicy-pink a:hover{
+    color: #f4524d !important;
+}
+.button-color-sandy-brown a,
+.button-color-hover-sandy-brown a:hover{
+    color: #f79468 !important;
+}
+.button-color-purple a,
+.button-color-hover-purple a:hover{
+    color: #b97ebb !important;
+}
+.button-color-white a,
+.button-color-hover-white a:hover{
+    color: #fff !important;
+}
+.button-color-text-body a,
+.button-color-hover-text-body a:hover{
+    color: #888 !important;
+}
+.button-color-primary a,
+.button-color-hover-primary a:hover{
+    @extend .color-primary;
+}
+
+//Background-button
+.background-color-blue a,
+.background-color-hover-blue a:hover{
+    background: #5472d2 !important;
+}
+.background-color-turquoise a,
+.background-color-hover-turquoise a:hover{
+    background: #00c1cf !important;
+}
+.background-color-pink a,
+.background-color-hover-pink a:hover{
+    background: #fe6c61 !important;
+}
+.background-color-violet a,
+.background-color-hover-violet a:hover{
+    background: #8d6dc4 !important;
+}
+.background-color-peacoc a,
+.background-color-hover-peacoc a:hover{
+    background: #4cadc9 !important;
+}
+.background-color-chino a,
+.background-color-hover-chino a:hover{
+    background: #cec2ab !important;
+}
+.background-color-mulled-wine a,
+.background-color-hover-mulled-wine a:hover{
+    background: #50485b !important;
+}
+.background-color-vista-blue a,
+.background-color-hover-vista-blue a:hover{
+    background: #75d69c !important;
+}
+.background-color-black a,
+.background-color-hover-black a:hover{
+    background: #333333 !important;
+}
+.background-color-grey a,
+.background-color-hover-grey a:hover{
+    background: #ebebeb !important;
+}
+.background-color-orange a,
+.background-color-hover-orange a:hover{
+    background: #f7be68 !important;
+}
+.background-color-sky a,
+.background-color-hover-sky a:hover{
+    background: #5aa1e3 !important;
+}
+.background-color-green a,
+.background-color-hover-green a:hover{
+    background: #7cbb2c !important;
+}
+.background-color-juicy-pink a,
+.background-color-hover-juicy-pink a:hover{
+    background: #f4524d !important;
+}
+.background-color-sandy-brown a,
+.background-color-hover-sandy-brown a:hover{
+    background: #f79468 !important;
+}
+.background-color-purple a,
+.background-color-hover-purple a:hover{
+    background: #b97ebb !important;
+}
+.background-color-white a,
+.background-color-hover-white a:hover{
+    background: #fff !important;
+}
+.background-color-text-body a,
+.background-color-hover-text-body a:hover{
+    background: #888 !important;
+}
+.background-color-primary a,
+.background-color-hover-primary a:hover{
+    @extend .background-color-primary;
+}
+
+//Border-button
+.border-color-blue a,
+.border-color-hover-blue a:hover{
+    border-color: #5472d2 !important;
+}
+.border-color-turquoise a,
+.border-color-hover-turquoise a:hover{
+    border-color: #00c1cf !important;
+}
+.border-color-pink a,
+.border-color-hover-pink a:hover{
+    border-color: #fe6c61 !important;
+}
+.border-color-violet a,
+.border-color-hover-violet a:hover{
+    border-color: #8d6dc4!important;
+}
+.border-color-peacoc a,
+.border-color-hover-peacoc a:hover{
+    border-color: #4cadc9 !important;
+}
+.border-color-chino a,
+.border-color-hover-chino a:hover{
+    border-color: #cec2ab !important;
+}
+.border-color-mulled-wine a,
+.border-color-hover-mulled-wine a:hover{
+    border-color: #50485b !important;
+}
+.border-color-vista-blue a,
+.border-color-hover-vista-blue a:hover{
+    border-color: #75d69c !important;
+}
+.border-color-black a,
+.border-color-hover-black a:hover{
+    border-color: #333333 !important;
+}
+.border-color-grey a,
+.border-color-hover-grey a:hover{
+    border-color: #ebebeb !important;
+}
+.border-color-orange a,
+.border-color-hover-orange a:hover{
+    border-color: #f7be68 !important;
+}
+.border-color-sky a,
+.border-color-hover-sky a:hover{
+    border-color: #5aa1e3 !important;
+}
+.border-color-green a,
+.border-color-hover-green a:hover{
+    border-color: #7cbb2c !important;
+}
+.border-color-juicy-pink a,
+.border-color-hover-juicy-pink a:hover{
+    border-color: #f4524d !important;
+}
+.border-color-sandy-brown a,
+.border-color-hover-sandy-brown a:hover{
+    border-color: #f79468 !important;
+}
+.border-color-purple a,
+.border-color-hover-purple a:hover{
+    border-color: #b97ebb !important;
+}
+.border-color-white a,
+.border-color-hover-white a:hover{
+    border-color: #fff !important;
+}
+.border-color-text-body a,
+.border-color-hover-text-body a:hover{
+    border-color: #888 !important;
+}
+.border-color-primary a,
+.border-color-hover-primary a:hover{
+    @extend .border-color-primary;
+}

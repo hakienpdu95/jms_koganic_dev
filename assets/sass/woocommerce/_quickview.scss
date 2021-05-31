@@ -1,0 +1,78 @@
+.product-quickview {
+    background: #fff;
+    max-width: 990px;
+    margin: auto;
+
+    .wc-single-product {
+        padding-bottom: 0;
+    }
+
+    .woocommerce-grouped-product-list-item {
+        .quantity {
+            .qty {
+                a {
+                    width: 38px;
+                }
+            }
+
+            input[type="number"] {
+                width: 44px;
+            }
+        }
+    }
+
+    .summary {
+        padding: 30px 30px 0 0;
+    }
+
+    .column-right {
+        overflow-x: auto;
+    }
+
+    .slick-slider {
+    	.slick-prev, 
+    	.slick-next {
+    		opacity: 1;
+
+    		&:hover {
+    			&:before {
+    				@extend .qodefFadeToRight;
+    			}
+    		}
+    	}
+
+    	.slick-prev {
+		    left: 10px !important;
+		}
+    	.slick-next {
+		    left: 68px !important;
+		}
+    }
+
+    .p-nav {
+    	display: none !important;
+    }
+}
+
+.loader {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.65);
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+
+.loader-inner {
+    background: url('assets/images/icons/three-dots.svg') no-repeat 0 0;
+	background-size: 100%;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

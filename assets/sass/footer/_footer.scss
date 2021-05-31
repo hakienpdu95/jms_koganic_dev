@@ -1,0 +1,169 @@
+#modalProductInfo,
+#modalProductInfo-02,
+#modalProductInfo-03 {
+    display: none;
+}
+
+.wpspin-light {
+    visibility:hidden
+}
+.cb-wishlist {
+    clear:both
+}
+
+form.mc4wp-form {
+    text-align: center;              
+
+    > .mc4wp-form-fields {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include min-1280 {
+            justify-content: space-between;
+            flex-direction: row;
+        } 
+
+        .mc4wp-default {
+            display: flex;
+            margin: 0;
+
+            @include landscape-max-540 {
+                flex-direction: column;
+            }
+
+            @include portrait-max-540 {
+                flex-direction: column;
+            }
+        }
+
+        p {
+            margin-bottom: 11px;
+        }
+        
+        .mc4wp-text {
+            line-height: 1;
+            font-size: 32px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 0 20px;
+            border: none;
+            border-radius: 50px;
+            min-width: 443px;
+            height: 50px;
+            background: rgba(245,245,245,.15);
+            transition: all 0.2s;   
+
+            @include landscape-max-540 {
+                text-align: center;
+            }
+
+            @include portrait-max-540 {
+                text-align: center;
+            }
+
+            &::placeholder { 
+              color: #777;
+              opacity: 1;
+            }          
+        }
+
+        button[type="submit"] {
+            background-color: #000000;
+            color: #ffffff;
+            text-transform: capitalize;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            padding: 0 15px;
+            padding-top: 4px;
+            min-width: 148px;
+            border-radius: 50px;
+            margin-left: 13px;
+            
+            @include landscape-max-540 {
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+
+            @include portrait-max-540 {
+                border-radius: 5px;
+                margin-top: 15px;
+            }
+
+            &:hover {
+                @extend .background-color-primary;
+            }
+        }
+    }
+}
+
+footer {
+    .koganic-payment-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 411px) {
+    footer {
+        .koganic-payment-list {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: center;
+            margin-left: -15px;
+            margin-top: -2px;    
+
+            li {
+                margin-left: 15px;
+                margin-top: 15px;
+            } 
+
+            img {
+                height: 18px;
+            }       
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .footer{
+        .footer-bottom{
+            text-align: center;
+            p{
+                text-align: center !important;
+            }
+            .menu li{
+                padding: 0 15px;
+            }
+        }
+    }
+    .footer .mc4wp-form .mc4wp-form-fields{
+        .newletter-text,
+        .form-newletter input[type="submit"]{
+            margin: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .footer-top{
+        background-position: left top;
+    }
+}

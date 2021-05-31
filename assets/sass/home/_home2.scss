@@ -1,0 +1,273 @@
+.header-2 {
+    background-color: #FFF;
+    
+    .wrap-header {
+        .header-account {
+            display: inline-flex;
+
+            &:before {
+                content: "\e8a6";
+                font-size: 28px;
+            }
+        }
+    }
+
+    .site-header-account {
+        .header-account {
+            a {
+                > span {
+                    display: none !important;
+                }
+            }
+        }
+    }
+
+    .primary-menu {
+        > li {
+            padding: 0 11px;
+        }
+    }
+
+    .header-first {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        @include min-1270 {
+            padding-top: 36px;
+            padding-bottom: 30px;
+        }   
+
+        @include max-640 {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .header-cart,
+        .header-wishlist {
+            display: inline-flex;
+
+            > a {
+                display: inline-flex;
+            }
+        }
+
+        .header-cart {
+            .cart-count {
+                right: -12px;
+                top: -14px;
+                background-color: #FF3514;
+            }
+
+            > a {
+                position: relative;
+                top: 0;
+            }
+        }
+        .header-action {
+            .border-style {
+                border: 2px solid;
+                border-color: #D4D4D4;
+                width: 45px;
+                height: 45px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .pt-menu-categories {
+        position: relative;
+
+        .koganic-menu.vertical-menu {
+            > li {
+                line-height: 1.2;
+                padding: 0;
+                
+                &:not(:last-of-type) {
+                    border-bottom: 1px dashed #ebebeb;
+                }
+            }
+        }
+
+        .pt-dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 55px;
+            width: 100%;
+            background-color: white;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.25);
+        }
+    }
+    .header-menu {
+        @extend .background-color-primary;
+
+        @include max-1100 {
+            display: none !important;
+        }
+
+        .header-nav {
+            .header-block {
+                display: inline-block;
+                margin: 0;
+
+                &:not(:last-of-type) {
+                    margin-right: 28px;
+                }
+            }
+        }
+
+        .header-action {
+
+        }
+        .callphone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            min-width: 228px;
+            padding: 6px 0 5px 10px;
+            color: #FFF;
+            top: -2px;
+
+            span {
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 1.4;
+
+                &.phone_in_talk {
+                    font-size: 22px;
+                    margin-right: 9px;
+
+                    &:before {
+                        font-size: 22px;
+                        content: '\e61d';
+                        @extend .material-icons-outlined;
+                        top: 1px;
+                        position: relative;
+                    }
+                }
+
+                &:last-of-type {
+                    margin-top: 3px;
+                }
+            }
+        }        
+    }
+
+    .box-search {
+        flex: 2 1 auto;      
+        text-align: center;     
+
+        .header-search {
+            @include min-1200 {
+                min-width: 550px;
+                max-width: 550px;
+            }
+
+            .ui.search {
+                >.results {
+                    width: 100%;
+                }
+            }
+
+            .ui.icon.input {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                
+                &:before {
+                    content: '\e8b6';
+                    @extend .material-icons-outlined;
+                    top: 0;
+                    position: absolute;
+                    left: 14px;
+                    height: 50px;
+                    display: inline-flex;
+                    align-items: center;
+                    z-index: 1;
+                    font-size: 28px;
+                    color: #3F2803;
+                }
+
+                input {
+                    border-color: #F3F3F3;
+                    height: 50px;
+                    background-color: #F3F3F3;
+                    border-radius: 50px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: rgba(63, 40, 3, 0.7);
+                    position: relative;
+                    padding-right: 0 !important;
+                    padding-left: 50px;
+
+                    &::placeholder { 
+                        color: rgba(63, 40, 3, 0.7);
+                        opacity: 1;
+                    } 
+                }
+            }
+
+            .ui.search {
+                #woo-searchsubmit {
+                    background: transparent;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #3F2803;
+                    text-transform: initial;
+                    line-height: 1.4;
+                    padding: 0 16px;
+                }
+            }
+        } 
+    }
+
+    .koganic-menu {
+        .dropdown-menu {
+            @include min-1300 {
+                margin-top: 0px;
+            }
+        }
+
+        &.primary-menu {
+            > li {
+                > a {
+                    color: #fff;
+                    padding: 18px 0 15px;
+                }
+            }
+        }
+    } 
+
+    .pt-dropdown-toggle {
+        background-color: #FFF;
+        color: #3F2803;
+        font-weight: 600;
+        line-height: 1.4;
+        font-size: 18px;
+        width: 300px;
+        text-align: left;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 9px 10px 11px 18px;
+        border-radius: 60px;
+        top: -2px;
+
+        &:before {
+            content: '\e5d2';
+            @extend .material-icons-outlined;
+        }
+
+        > span {
+            line-height: 1;
+            text-transform: initial;
+            position: relative;
+            top: 3px;
+            margin-left: 12px;
+        }
+    } 
+}

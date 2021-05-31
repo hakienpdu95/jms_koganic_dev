@@ -1,0 +1,165 @@
+.koganic-products-style-6 {
+    position: relative;
+
+    &.owl-carousel {
+        .owl-nav.disabled + .owl-dots {
+            @include min-1200 {
+                justify-content: flex-end;
+                position: absolute;
+                top: -34px;
+                margin-top: 0;
+                right: 0;
+            }
+        }
+
+        .owl-dots {
+            .owl-dot {
+                background-color: #D3D3D3;
+            }
+        }
+    }
+}
+
+.product-style-6 {
+    .ImageOverlayCa {
+        background-color: #FFF;
+        height: 100%;
+        left: 0;
+        top: 0%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .tooltip {
+        position: relative;
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 600;
+        @extend .default_font;
+    }
+
+    .product_after_shop_loop_switcher {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+        width: 100%;
+    }
+
+    .badge {
+        min-width: 64px;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background-color: #FF2626;
+        font-size: 18px;
+        font-weight: 600;
+        top: 23px;
+        right: 0;
+    }
+
+    .price {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 700;
+        color: #3F2803;
+        display: inline-flex;
+        align-items: flex-start;
+        line-height: 1;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        del {
+            margin-right: 0;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(63,40,3,.7);
+            margin-bottom: 6px;
+        }
+
+        ins {
+            color: #FF2626;
+        }
+    }
+
+    .button-cart {
+        background-color: transparent;
+        text-transform: inherit;
+        font-weight: 600;
+        line-height: 1.1;
+        font-size: 16px;
+        padding: 4.5px 15px;
+        min-width: 100px;
+        border: 2px solid;
+        @extend .border-color-primary;
+        border-radius: 30px;        
+        @extend .color-primary;
+
+        &:hover {
+            color: white;
+            @extend .border-color-primary;
+            @extend .background-color-primary;
+        }
+    }
+
+    .product-box {
+        border-radius: 15px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+        transition: all 0.3s;
+
+        .product-info {
+            padding: 0 15px;
+            margin-bottom: 22px;
+
+            @include min-1300 {
+                padding: 0 30px;
+            }
+        }
+
+        .star-rating {
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        .el-price {
+            margin-top: 14px;
+
+            @include min-791 {
+                min-height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &.koganic_woocommerce_time_sale {
+
+            }
+
+            &:not(.koganic_woocommerce_time_sale) {
+                .price {
+                    @include min-1300 {
+                        top: 2px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+        
+        a.woocommerce-LoopProduct-link {
+            font-size: 20px;
+            font-weight: 500;
+            color: #3F2803;
+            margin-top: 30px;
+        }
+
+        .product-cat {
+            margin-top: 0;
+
+            a {
+                font-size: 15px;
+                color: rgba(63,40,3,.7);
+            }
+        }
+    }
+}

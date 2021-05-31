@@ -1,0 +1,77 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.site-dark {
+	background-color: #18191A;
+	color: rgba(255, 255, 255, 0.8);
+
+	&.home-5-dark {
+		background: #0B111F;
+
+		a {
+			color: #FFF
+		}		
+	}
+
+	a {
+		color: rgba(255, 255, 255, 0.8);
+	}	
+}
+
+.site-light {
+	background-color: white;
+}
+
+.home-6-light,
+.home-7-light {
+	background-color: #F4F4F4;
+}
+
+body {
+    @extend .default_font;
+    color: rgba(63,40,3,.7);
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.6;
+	font-weight: 400;
+}
+
+code, kbd, pre, samp {
+	@extend .default_font;
+}
+
+p {
+	margin: 16px 0 0 0;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+b, strong {
+	font-weight: 600;
+}
+  
+@import 'list';
+@import 'link';
+@import 'heading';
+@import 'table';
+@import 'form';
+@import 'button';
+@import 'clearing';
+@import 'helper';
+@import 'global';
+@import 'layout';
+@import 'layout_vc';
+@import 'image-effect';
+@import 'custome';
+@import 'custome-device';

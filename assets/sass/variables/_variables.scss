@@ -1,0 +1,87 @@
+$koganic_font: 'Cerebri Sans Pro', sans-serif; /*for body - default_font*/
+$koganic_font02: 'Alako-Bold', sans-serif; /*for heading - default_font02*/
+$koganic_font03: 'SVN-Wellfont', sans-serif; /*for heading - default_font03*/
+
+.default_font {
+	font-family: $koganic_font;
+}
+.default_font02 {
+	font-family: $koganic_font02;
+}
+.default_font03 {
+	font-family: $koganic_font03;
+}
+
+$color-primary: #7AC44B !default;
+.color-primary {
+	color: $color-primary;
+}
+.background-color-primary {
+	background-color: $color-primary;
+}
+.border-color-primary {
+	border-color: $color-primary;
+}
+.border-top-color-primary {
+	border-top-color: $color-primary;
+}
+.border-bottom-primary-color {
+	border-bottom-color: $color-primary;
+}
+.border-left-color-primary {
+	border-left-color: $color-primary;
+}
+.border-right-color-primary {
+	border-right-color: $color-primary;
+}
+
+$color-body: #3F2803 !default;
+.color-body {
+	color: $color-body;
+}
+
+.koganic-font-icon{
+  font-family: 'koganic';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
+
+.font-icon{
+	display: inline-block;
+	font-family: 'simple-line-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+.second-icon{
+	display: inline-block;
+	font-family: 'Pe-icon-7-stroke';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+.material-icons-outlined {
+    font-family: 'Material Icons Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}

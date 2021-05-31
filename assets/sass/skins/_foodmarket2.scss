@@ -1,0 +1,891 @@
+$food-market-2-color-primary: #7AC44B !default;
+$food-market-2-color-body: #3F2803 !default;
+
+.home-food-market-2 {
+
+}
+
+.elementor-element {
+	&.elementor-element-ac38232 {
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 20px;
+			overflow: hidden;
+
+			.content {
+			    @include min-1300 {
+			    	max-width: 313px;
+				    text-align: left;
+				    float: right;
+			    }
+
+			    .subtitle {
+			    	margin-top: -17px;
+			    }
+
+			    .subsubtitle {
+			    	margin-top: 15px;
+
+			    	@include min-1300 {
+    					margin-left: -51px;
+			    	}
+
+			    	p {
+			    		display: inline-flex;
+					    line-height: 1.3;
+					    position: relative;
+					    min-width: 232px;
+					    justify-content: center;
+					    align-items: center;
+
+    					&:before {
+    						content: '';
+    						position: absolute;
+							background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+						    background-repeat: no-repeat;
+						    background-position: top center;		
+						    background-size: contain;
+						    width: 232px;
+						    height: 69px;    						
+    						z-index: -1;
+    					}
+			    	}
+			    }
+			}
+		}
+	}
+
+	&.elementor-element-79fb7a6 {
+		margin-top: 50px;
+		margin-bottom: 41px;
+
+		.service-elements {
+			justify-content: center;
+
+			.service-box-inner {
+				@include min-1300 {
+					max-width: 310px;
+				}
+			}
+
+			.service-box-content {
+				@include min-1300 {
+					flex: inherit;
+				}
+			}
+
+			.service-title {
+				font-size: 24px;
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+
+			.service-subtitle {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 1.8;
+				margin-top: 8px;
+			}
+		}
+	}
+
+	&.elementor-element-fe4b726 {
+		> .elementor-container {
+			background-color: #FFF;
+			box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+			border-radius: 10px;
+			overflow: hidden;
+			padding-top: 30px;
+
+			@include min-1300 {
+				padding-top: 58px;
+			}
+
+			> .elementor-column {
+				margin-bottom: 25px;
+
+				@include min-1300 {
+					margin-bottom: 62px;
+				}
+			}
+		}
+	}	
+
+	&.elementor-element-23eec66 {
+		background-image: url('assets/images/demo/food-market-banner-25.jpg');
+		background-position: top right;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    width: 100%;
+	    border-radius: 10px;
+	    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+	    overflow: hidden;
+	    padding-top: 80px;
+	    padding-bottom: 72px;
+
+	    @include min-1200 {
+	    	background-position: top center;
+	    }
+
+	    .mc4wp-form {
+	    	@include min-791 {
+	    		max-width: 615px;
+	    	}
+
+	    	> .mc4wp-form-fields {
+	    		flex-direction: column;
+				align-items: flex-start;
+
+				.mc4wp-discount {
+					font-size: 32px;
+					font-weight: 600;
+					color: $food-market-2-color-body;
+					line-height: 1.3;
+					margin: 0;
+				}
+
+	    		.text2 {
+	    			display: block !important;
+	    			color: rgba(63,40,3,.7);
+	    			margin-bottom: 0;
+	    			margin-top: 9px;
+	    		}
+
+	    		.mc4wp-default {
+	    			flex-direction: column;
+	    			width: 100%;
+	    			margin-top: 32px;
+
+	    			@include min-1300 {
+	    				max-width: 490px;
+	    			}
+	    		}
+
+			    input[type="email"] {
+			    	border: 2px solid #F1F1F1;
+			    	border-radius: 50px;
+			    	background-color: #FFF;
+			    	color: rgba(63, 40, 3, 0.7);
+
+			    	&::placeholder { 
+		              	color: rgba(63, 40, 3, 0.7);
+		              	opacity: 1;
+		            } 
+			    }
+
+			    button[type="submit"] {
+			    	margin-left: 0;
+				    line-height: 50px;
+				    padding: 0 15px;
+				    color: #FFF;
+				    background-color: $food-market-2-color-primary;
+				    margin-top: 22px;
+				    font-size: 21px;
+				    font-weight: 700;
+
+				    span {
+				    	position: relative;
+				    	top: 2px;
+				    }
+			    }	    		
+	    	}
+	    }
+	}
+
+	&.elementor-element-8a4dd00 {
+		> .elementor-widget-container {
+			display: flex;
+    		justify-content: center;
+
+    		.mc4wp-form {
+	    		@include min-1300 {
+	    			position: relative;
+    				left: calc(19% + 9px);
+	    		}
+    		}
+		}
+	}
+
+	&.elementor-element-597f463 {
+		color: rgba(63, 40, 3, 0.7);
+		line-height: 1.8;
+
+		h5 {
+			margin-bottom: 21px;
+		}
+
+		.textwidget {
+			p {
+				@include min-1300 {
+					max-width: 333px;
+				}
+			}
+		}
+
+		ul {
+			margin-top: 19px;
+
+			a:hover:after,
+			a:focus:after {
+				opacity: 0 !important;
+			}
+
+			li {
+				margin-bottom: 10px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+
+			img {
+				max-width: 200px;
+			}
+		}
+	}
+	
+	&.elementor-element-aa3837b {
+		margin-bottom: 18px;
+		@extend .default_font;
+
+		ul {
+			font-size: 16px;
+			font-weight: 400;
+			position: relative;
+			margin-bottom: 0;
+			padding-left: 53px;
+
+			&:before {
+				content: '';
+				background-image: url('assets/images/demo/organic-icon-headset-mic.png');
+		        background-repeat: no-repeat;
+		        background-position: center center;		
+		        background-size: contain;
+		        width: 38px;
+		        height: 46px;
+		        display: inline-block;
+			    position: absolute;
+			    left: 0;
+			    top: 4px;
+			}
+
+			li {
+				margin-bottom: 3px;
+
+				&:nth-of-type(2) {
+					font-size: 20px;
+					font-weight: 700;
+					color: #F1402A;
+				}
+			}
+		}
+	}
+	
+	&.elementor-element-eefd08b {
+		margin-bottom: 9px;
+		@extend .default_font;
+		color: rgba(63,40,3,.7);
+
+		ul {
+			font-size: 16px;
+    		font-weight: 500;
+
+			li {
+				margin-bottom: 9px;
+			}
+		}
+	}	
+
+	&.elementor-element-d73ceed {
+		margin-top: 59px;
+	}
+
+	&.elementor-element-0857d44 {
+		@include min-1300 {
+			margin-top: 68px;
+		}
+
+		ul.menu {
+			margin-bottom: 0;
+			
+			li {
+				display: inline;
+
+				&:not(:last-of-type) {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-e5108ab {
+		margin-bottom: 7px;
+		
+		img {
+			max-width: 210px;
+		}
+	}	
+
+	&.elementor-element-33b38ac {
+		font-weight: 500;
+		color: rgba(63,40,3,.7);
+		@extend .default_font;
+		font-size: 16px;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&.elementor-element-58d9552 {
+		@include min-1300 {
+			margin-top: 61px;
+		}
+
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+	
+	&.elementor-element-2bd0f6e {
+		margin-bottom: 26px;
+	}	
+
+	&.elementor-element-390092a {
+		margin-bottom: 50px;
+	}
+
+	&.elementor-element-eab5144 {
+		margin-top: 60px;
+	}
+
+	&.elementor-element-0e3f54c {
+		background-image: url('assets/images/demo/food-market-banner-22.jpg');
+	    background-repeat: no-repeat;
+	    background-position: center center;		
+	    background-size: cover;		
+	    border-radius: 10px;
+    	overflow: hidden;
+		padding-top: 61px;
+	    
+	    .service-elements {
+	    	margin-bottom: 25px;
+
+	    	@include min-1300 {
+	    		margin-bottom: 52px;
+	    	}
+
+	    	.service-title {
+	    		font-size: 26px;
+	    		font-weight: 600;
+	    		line-height: 1.2;
+	    		margin-top: 10px;
+	    		margin-bottom: 11px;
+	    	}
+
+	    	.service-subtitle {
+	    		font-size: 18px;
+	    		font-weight: 400;
+	    		margin: 0;
+	    	}
+	    }
+	}					
+}
+
+/*New Products*/
+.elementor-element {
+	&.elementor-element-f879f43 {
+		h3.title {
+			position: relative;
+		    line-height: 1.25;
+		    margin-bottom: 0;
+		    padding-left: 53px;
+		    display: inline-flex;
+		    justify-content: center;
+		    align-items: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
+				background-image: url('assets/images/demo/flaticon-new.png');
+			    background-repeat: no-repeat;
+			    background-position: center center;		
+			    background-size: 40px 40px;
+			    width: 40px;
+			    height: 40px;
+			    object-fit: cover;
+			}
+		}
+	}
+
+	&.elementor-element-8bd9d26 {
+		@include min-768 {
+			width: 290px;
+		}
+	}
+
+	&.elementor-element-44a806a {
+		@include min-768 {
+			width: calc(100% - 290px);
+		}
+	}
+
+	&.elementor-element-d24fd3b {
+		background-color: #FFF;
+	    border-radius: 10px;
+	    padding: 33px;
+	    padding-bottom: 24px;
+	    padding-top: 19px;
+	}
+
+	&.elementor-element-3aa545f {
+		padding-left: 19px;
+		
+		.layout-2.jmsproducttabs-elements {
+			.jms-tabs-title {
+				@include min-1300 {
+					margin-top: -76px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-79fb990 {
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 10px;
+
+			.banner-text {
+				padding-top: 29px;
+			}
+
+			.title {
+				p {
+					line-height: 1.2;
+				}
+			}
+		}
+
+	    .subtitle {
+	    	margin-top: 1px;
+
+	    	p {
+	    		display: inline-flex;
+			    line-height: 1.3;
+			    position: relative;
+			    min-width: 200px;
+			    justify-content: center;
+			    align-items: center;
+
+				&:before {
+					content: '';
+					position: absolute;
+					background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+				    background-repeat: no-repeat;
+				    background-position: 0px 0px;		
+				    background-size: contain;
+				    width: 200px;
+				    height: 59px;    						
+					z-index: -1;
+					top: 7px;
+				}
+	    	}
+	    }		
+	}
+
+	&.elementor-element-f879f43 {
+		margin-bottom: 11px;
+	}
+
+	&.elementor-element-244ddc3 {
+		margin-bottom: 31px;
+
+		hr {
+			border-top: 1px solid #f1f1f1;
+		}
+	}
+}
+
+/*Sale Products*/
+.elementor-element {
+	&.elementor-element-886584a {
+		margin-top: 60px;
+	}
+
+	&.elementor-element-c028671 {
+		background-color: #FFF;
+	    border-radius: 10px;
+	    padding: 33px;
+	    padding-bottom: 24px;
+	    padding-top: 19px;
+	}	
+
+	&.elementor-element-1fb206e {
+		margin-bottom: 11px;
+
+		h3.title {
+			position: relative;
+		    line-height: 1.25;
+		    margin-bottom: 0;
+		    padding-left: 53px;
+		    display: inline-flex;
+		    justify-content: center;
+		    align-items: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
+				background-image: url('assets/images/demo/flaticon-discount.png');
+			    background-repeat: no-repeat;
+			    background-position: center center;		
+			    background-size: 40px 40px;
+			    width: 40px;
+			    height: 40px;
+			    object-fit: cover;
+			}
+		}
+	}
+
+	&.elementor-element-93896f1 {
+		@include min-768 {
+			width: 290px;
+		}
+	}
+
+	&.elementor-element-e5d08d9 {
+		@include min-768 {
+			width: calc(100% - 290px);
+		}
+	}
+
+	&.elementor-element-6a3858a {
+		margin-bottom: 31px;
+
+		hr {
+			border-top: 1px solid #f1f1f1;
+		}
+	}
+	
+	&.elementor-element-bbd3d6b {
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 10px;
+
+			.banner-text {
+				padding: 22px;
+				padding-top: 29px;
+			}
+
+			.title {
+				p {
+					line-height: 1.2;
+				}
+			}
+		}
+
+	    .subtitle {
+	    	margin-top: 1px;
+
+	    	p {
+	    		display: inline-flex;
+			    line-height: 1.3;
+			    position: relative;
+			    min-width: 200px;
+			    justify-content: center;
+			    align-items: center;
+
+				&:before {
+					content: '';
+					position: absolute;
+					background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+				    background-repeat: no-repeat;
+				    background-position: 0px 0px;		
+				    background-size: contain;
+				    width: 200px;
+				    height: 59px;    						
+					z-index: -1;
+					top: 7px;
+				}
+	    	}
+	    }		
+	}
+
+	&.elementor-element-da1d810 {
+		padding-left: 19px;
+		
+		.layout-2.jmsproducttabs-elements {
+			.jms-tabs-title {
+				@include min-1300 {
+					margin-top: -76px;
+				}
+			}
+		}
+	}				
+}
+
+/*Popular Products*/
+.elementor-element {
+	&.elementor-element-30e2731 {
+		margin-top: 60px;
+	}
+
+	&.elementor-element-860d041 {
+		background-color: #FFF;
+	    border-radius: 10px;
+	    padding: 33px;
+	    padding-bottom: 24px;
+	    padding-top: 19px;
+	}	
+
+	&.elementor-element-4c6ee0b {
+		margin-bottom: 11px;
+
+		h3.title {
+			position: relative;
+		    line-height: 1.25;
+		    margin-bottom: 0;
+		    padding-left: 53px;
+		    display: inline-flex;
+		    justify-content: center;
+		    align-items: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
+				background-image: url('assets/images/demo/flaticon-badge.png');
+			    background-repeat: no-repeat;
+			    background-position: center center;		
+			    background-size: 40px 40px;
+			    width: 40px;
+			    height: 40px;
+			    object-fit: cover;
+			}
+		}
+	}
+
+	&.elementor-element-9178612 {
+		margin-bottom: 31px;
+
+		hr {
+			border-top: 1px solid #f1f1f1;
+		}
+	}
+
+	&.elementor-element-011e363 {
+		@include min-768 {
+			width: 290px;
+		}
+	}
+
+	&.elementor-element-9d9d25b {
+		@include min-768 {
+			width: calc(100% - 290px);
+		}
+	}
+	
+	&.elementor-element-4111bb9 {
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 10px;
+
+			.banner-text {
+				padding: 22px;
+				padding-top: 29px;
+			}
+
+			.title {
+				p {
+					line-height: 1.2;
+				}
+			}
+		}
+
+	    .subtitle {
+	    	margin-top: 1px;
+
+	    	p {
+	    		display: inline-flex;
+			    line-height: 1.3;
+			    position: relative;
+			    min-width: 200px;
+			    justify-content: center;
+			    align-items: center;
+
+				&:before {
+					content: '';
+					position: absolute;
+					background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+				    background-repeat: no-repeat;
+				    background-position: 0px 0px;		
+				    background-size: contain;
+				    width: 200px;
+				    height: 59px;    						
+					z-index: -1;
+					top: 7px;
+				}
+	    	}
+	    }		
+	}
+
+	&.elementor-element-2263bff {
+		padding-left: 19px;
+		
+		.layout-2.jmsproducttabs-elements {
+			.jms-tabs-title {
+				@include min-1300 {
+					margin-top: -76px;
+				}
+			}
+		}
+	}				
+}
+
+/*Top Rated*/
+.elementor-element {
+	&.elementor-element-6470f2e {
+		margin-top: 60px;
+	}
+
+	&.elementor-element-4b6364f {
+		background-color: #FFF;
+	    border-radius: 10px;
+	    padding: 33px;
+	    padding-bottom: 24px;
+	    padding-top: 19px;
+	}	
+
+	&.elementor-element-2a83384 {
+		margin-bottom: 11px;
+
+		h3.title {
+			position: relative;
+		    line-height: 1.25;
+		    margin-bottom: 0;
+		    padding-left: 53px;
+		    display: inline-flex;
+		    justify-content: center;
+		    align-items: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
+				background-image: url('assets/images/demo/flaticon-badge-1.png');
+			    background-repeat: no-repeat;
+			    background-position: center center;		
+			    background-size: 40px 40px;
+			    width: 40px;
+			    height: 40px;
+			    object-fit: cover;
+			}
+		}
+	}
+
+	&.elementor-element-a883fcc {
+		margin-bottom: 31px;
+
+		hr {
+			border-top: 1px solid #f1f1f1;
+		}
+	}
+
+	&.elementor-element-af9a25d {
+		@include min-768 {
+			width: 290px;
+		}
+	}
+
+	&.elementor-element-9850ae9 {
+		@include min-768 {
+			width: calc(100% - 290px);
+		}
+	}
+	
+	&.elementor-element-7babb07 {
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 10px;
+
+			.banner-text {
+				padding: 22px;
+				padding-top: 29px;
+			}
+
+			.title {
+				p {
+					line-height: 1.2;
+				}
+			}
+		}
+
+	    .subtitle {
+	    	margin-top: 1px;
+
+	    	p {
+	    		display: inline-flex;
+			    line-height: 1.3;
+			    position: relative;
+			    min-width: 200px;
+			    justify-content: center;
+			    align-items: center;
+
+				&:before {
+					content: '';
+					position: absolute;
+					background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+				    background-repeat: no-repeat;
+				    background-position: 0px 0px;		
+				    background-size: contain;
+				    width: 200px;
+				    height: 59px;    						
+					z-index: -1;
+					top: 7px;
+				}
+	    	}
+	    }		
+	}
+
+	&.elementor-element-21a0878 {
+		padding-left: 19px;
+		
+		.layout-2.jmsproducttabs-elements {
+			.jms-tabs-title {
+				@include min-1300 {
+					margin-top: -76px;
+				}
+			}
+		}
+	}				
+}
+
+.footer-7 {
+	padding-top: 86px;
+    background-color: #FFF;
+
+	h5 {
+		color: $food-market-2-color-body;
+	}
+
+	hr {
+		border-top: 1px solid #E2E2E2;
+	}
+
+	ul.menu {
+		font-weight: 500;
+
+		li {
+			margin-bottom: 9px;
+		}
+
+		a {
+			color: rgba(63, 40, 3, 0.7);
+		}
+	}	
+}

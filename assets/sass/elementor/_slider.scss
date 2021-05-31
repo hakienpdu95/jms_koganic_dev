@@ -1,0 +1,472 @@
+.theme-koganic {
+	.wp-block-themepunch-revslider {
+		.uranus {
+			display: flex !important;
+		    justify-content: center;
+		    align-items: center;
+		    flex-direction: column;
+
+			.tp-bullet {
+				box-shadow: none !important;
+
+				.tp-bullet-inner {
+					transform: scale(1);
+					-webkit-transform: scale(1);
+
+					&:before {
+						content: '';
+						position: absolute;
+						width: 20px;
+						height: 20px;
+						border: 2px solid;
+						border-color: transparent;
+						top: -6px;
+	    				left: -6px;
+	    				border-radius: 100%;
+					}
+				}
+
+				&.selected {
+					.tp-bullet-inner {
+						@extend .background-color-primary;
+						transform: scale(1) !important;
+
+						&:before {
+							@extend .border-color-primary;
+						}
+					}
+				}
+
+				&:hover {
+					.tp-bullet-inner {
+						@extend .background-color-primary;
+						transform: scale(1) !important;
+					}
+				}
+			}
+		}
+
+		.tparrows.hephaistos {
+			width: 53px !important;
+			height: 53px !important;
+			background: #5A111C !important;
+
+			&:hover {
+				background: #EB3335 !important;
+			}
+
+			&.tp-leftarrow,
+			&.tp-rightarrow {
+				&:before {
+					content: '' !important;
+				    width: 48px;
+				    height: 28px;
+				    background-repeat: no-repeat;
+				    background-position: top center;		
+				    background-size: contain;	
+				   	position: relative;
+				   	opacity: .5;		
+				   	top: 12px;			
+				}
+			}
+
+			&.tp-leftarrow {
+				&:before {
+				    background-image: url('assets/images/demo/nav-west.png');
+				    left: 18px;
+				}
+			}
+
+			&.tp-rightarrow {
+				&:before {
+				    background-image: url('assets/images/demo/nav-east.png');
+				    right: 18px;
+				}
+			}
+		}		
+	}
+}
+/**
+ * ================================
+ * Slider Home 1
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc1-titl1,
+	&.gmc1-titl2,
+	&.gmc1-titl3 {
+		font-family: $koganic_font !important;
+	}
+
+
+	&.gmc1-titl3 {
+		/*font-weight: 400 !important;*/
+		min-width: 84px !important;
+
+		@include min-1300 {
+			min-width: 158px !important;
+		}
+	}
+
+	&.gmc1-banner-1,
+	&.gmc1-banner-2,
+	&.gmc1-banner-3 {
+		font-family: $koganic_font !important;
+	}
+
+	&.gmc1-banner-1 {
+		@include min-1300 {
+			font-size: 100px !important;
+			line-height: 1.1 !important;
+			top: -59px !important;
+		}
+
+		span {
+			@include min-1300 {
+				font-size: 44px !important;
+				font-weight: 300 !important;
+				margin-left: -13px !important;
+			}
+		}
+	}	
+}
+
+/**
+ * ================================
+ * Slider Home 2
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc2-titl1,
+	&.gmc2-titl2,
+	&.gmc2-titl3 {
+		font-family: $koganic_font !important;
+	}
+
+	&.gmc2-titl1 {
+		
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 3
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc3-title1 {
+		font-family: $koganic_font02 !important;
+	}
+
+	&.gmc3-title2 {
+		font-family: $koganic_font !important;
+		min-width: 84px !important;
+
+		@include min-1300 {
+			min-width: 160px !important;
+		}		
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 4
+ * ================================
+*/
+
+.elementor-337 {
+	rs-fullwidth-wrap {
+		rs-slides {
+			rs-slide {
+				rs-sbg {
+					@include portrait-min-764-800 {
+						background-position: 40% 50% !important;
+					}
+
+					@include portrait-max-540 {
+						background-position: left !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.rs-layer {
+	&.gmc4-title1,
+	&.gmc4-title2,
+	&.gmc4-title3 {
+		font-family: $koganic_font !important;
+	}
+
+	&.gmc4-title3 {
+		font-family: $koganic_font !important;
+		min-width: 100px !important;
+
+		@include min-1300 {
+			min-width: 180px !important;
+		}		
+	}	
+}
+
+/**
+ * ================================
+ * Slider Home 5
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc5-title1,
+	&.gmc5-title2,
+	&.gmc5-title3 {
+		font-family: $koganic_font !important;
+	}
+
+	&.gmc5-title3 {
+		min-width: 100px !important;
+
+		@include min-1300 {
+			min-width: 160px !important;
+		}		
+	}	
+}
+
+/**
+ * ================================
+ * Slider Home 5 - Banner 1
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc5-title1-s1 {
+		@include landscape-min-1270-1450 {
+			margin-left: 68px !important;
+		}
+
+		@include landscape-min-1025-1100 {
+			margin-left: 68px !important;
+		}
+		
+		@include landscape-min-1022-1040 {
+			margin-left: 75px !important;
+		}
+	}
+
+	&.gmc5-title2-s1 {
+		@include landscape-min-1270-1450 {
+			margin-left: 68px !important;
+		}
+
+		@include landscape-min-1025-1100 {
+			margin-left: 68px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			margin-left: 75px !important;
+		}
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 6
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc6-title1 {
+		@include landscape-min-1270-1450 {
+			font-size: 50px !important;
+		    line-height: 1.1 !important;
+		    margin-top: -40px !important;
+		    margin-left: -100px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			font-size: 40px !important;
+		    line-height: 1.1 !important;
+		    margin-left: -100px !important;
+		    margin-top: -30px !important;
+		}
+	}
+
+	&.gmc6-title2 {
+		@include landscape-min-1270-1450 {
+		    font-size: 16px !important;
+		    min-width: 400px !important;
+		    line-height: 1.5 !important;
+		    margin-top: -5px !important;
+		    margin-left: -100px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			font-size: 16px !important;
+		    line-height: 1.4 !important;
+		    min-width: 400px !important;
+		    margin-left: -100px !important;
+		}
+
+		@include landscape-max-830 {
+			font-size: 16px !important;
+			line-height: 1.4 !important;
+		    min-width: 400px !important;
+		}
+
+		@include portrait-max-540 {
+			font-size: 15px !important;
+			line-height: 1.4 !important;
+		}
+	}
+
+	&.gmc6-title3 {
+		@include landscape-min-1270-1450 {
+		    margin-left: -100px !important;
+    		margin-top: 10px !important;	
+		}
+
+		@include landscape-min-1022-1040 {
+		    margin-left: -100px !important;
+		    margin-top: 22px !important;
+		}
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 8
+ * ================================
+*/
+.rs-layer {
+	&.gmc8-title1 {
+
+	}
+
+	&.gmc8-title2 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		padding: 10px 35px 12px 19px !important;
+	}
+
+	&.gmc8-title1-s2 {
+		@include landscape-min-1270-1450 {
+			font-size: 57px !important;
+		    line-height: 67px !important;
+		    margin-left: -80px !important;
+		    margin-top: -30px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			font-size: 57px !important;
+		    line-height: 67px !important;
+		    margin-left: -80px !important;
+		    margin-top: -60px !important;
+		}
+	}
+
+	&.gmc8-title2-s2 {
+		@include landscape-min-1270-1450 {
+			font-size: 16px !important;
+		    line-height: 30px !important;
+		    margin-left: -80px !important;
+		    margin-top: 18px !important;
+		    min-width: 400px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			font-size: 16px !important;
+		    line-height: 30px !important;
+		    margin-left: -80px !important;
+		    margin-top: 0 !important;
+		    min-width: 400px !important;
+		}		
+	}
+
+	&.gmc8-title3-s2 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		padding: 10px 35px 12px 19px !important;
+		
+		@include landscape-min-1270-1450 {
+			margin-left: -80px !important;
+			margin-top: 35px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+			margin-left: -80px !important;
+			margin-top: 35px !important;
+		}
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 10
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc10-title1 {
+
+	}
+
+	&.gmc10-title2 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		padding: 10px 35px 12px 19px !important;
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 11
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc11-title1 {
+
+	}
+
+	&.gmc11-title2 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		padding: 10px 35px 12px 19px !important;
+	}
+}
+
+/**
+ * ================================
+ * Slider Home 12
+ * ================================
+*/
+
+.rs-layer {
+	&.gmc12-title1 {
+		@include landscape-min-1270-1450 {
+			font-size: 50px !important;
+		    line-height: 62px !important;
+		    margin-top: -40px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+		    font-size: 50px !important;
+		    line-height: 62px !important;
+		    margin-top: -40px !important;
+		}
+	}
+
+	&.gmc12-title2 {
+		@include landscape-min-1270-1450 {
+		    font-size: 17px !important;
+		    line-height: 30px !important;
+		}
+
+		@include landscape-min-1022-1040 {
+		    font-size: 17px !important;
+    		line-height: 30px !important;	
+		}
+	}
+}

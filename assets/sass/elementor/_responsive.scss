@@ -1,0 +1,322 @@
+/* ---------------------------------------------
+   1. HOME 1
+   ------------------------------------------ */
+
+/* ---------------------------------------------
+   2. HOME 2
+   ------------------------------------------ */
+
+/* ---------------------------------------------
+   3. HOME 3
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-2b95812 {
+		@include landscape-max-1349 {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		@include portrait-max-540 {
+			padding-left: 10px;
+			padding-right: 10px;			
+		}
+	}
+
+	&.elementor-element-2a91fdd {
+		#sb_instagram {
+			#sbi_images {
+				@include portrait-max-540 {
+					padding-left: 0 !important;
+					padding-right: 0 !important;
+				}
+
+				.sbi_item {
+					@include portrait-max-540 {
+						padding-left: 10px !important;
+						padding-right: 10px !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-883a2c4 {
+		.koganic-social-icons.icon-align-left {
+			@include portrait-max-540 {
+				justify-content: center;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------
+   4. HOME 4
+   ------------------------------------------ */
+
+/* ---------------------------------------------
+   5. HOME 5
+   ------------------------------------------ */
+.elementor-element {
+	&.elementor-element-6997d6f {
+		.elementor-row {
+			> .elementor-column {
+				> .elementor-element-populated {
+					@include landscape-min-800-830 {
+						padding: 5px !important;
+					}
+
+					@include landscape-max-740 {
+						padding: 0 !important;
+					}
+
+					@include portrait-max-540 {
+						padding: 0 !important;	
+					}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-c33b2a6 {
+		.row {
+			@include portrait-max-540 {
+				margin-left: -10px;
+    			margin-right: -10px;
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------
+   6. HOME 6
+   ------------------------------------------ */
+.elementor-element {
+	&.elementor-element-6b9b257 {
+		.elementor-row {
+			> .elementor-column {
+				> .elementor-element-populated {
+					@include landscape-max-1025 {
+						padding: 10px !important;
+					}
+
+					@include portrait-max-540 {
+						padding: 10px !important;	
+					}
+				}
+			}
+		}		
+	}
+
+	&.elementor-element-85d30ca {
+		.row {
+			@include portrait-max-540 {
+				margin-left: -10px;
+    			margin-right: -10px;
+			}
+		}		
+	}
+
+	&.elementor-element-52e33e5 {
+		@include portrait-max-540 {
+			padding-left: 10px;
+    		padding-right: 10px;
+		}
+	}
+}
+
+/* ---------------------------------------------
+   7. HOME 7
+   ------------------------------------------ */
+.elementor-element {
+	&.elementor-element-2fccd4b,
+	&.elementor-element-6e132c5 {
+		.subtitle {
+			p {
+				@include portrait-min-764-800 {
+					font-size: 30px !important;
+					line-height: 1.1;
+    				margin-top: 12px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-f5a800b {
+		> .elementor-element-populated {
+			@include landscape-max-1025 {
+				padding: 0 !important;
+			}
+		}
+	}
+
+	&.elementor-element-230c625 {		
+		.elementor-row {
+			> .elementor-column {
+				> .elementor-element-populated {
+					@include landscape-max-1025 {
+						padding: 10px !important;
+					}
+
+					@include portrait-max-800 {
+						padding: 10px !important;	
+					}
+				}
+			}
+		}		
+	}
+
+	&.elementor-element-6b78572 {
+		> .elementor-element-populated {
+			@include landscape-max-1025 {
+				padding: 0 !important;
+			}
+
+			@include portrait-max-800 {
+				padding: 0 !important;
+			}
+		}
+
+		.elementor-row {
+			> .elementor-column {
+				> .elementor-element-populated {
+					@include landscape-max-1025 {
+						padding: 10px !important;
+					}
+
+					@include portrait-max-800 {
+						padding: 10px !important;	
+					}
+				}
+			}
+		}		
+	}
+}
+
+/* ---------------------------------------------
+   8. HOME 8
+   ------------------------------------------ */
+
+.elementor-element {
+
+}
+
+/* ---------------------------------------------
+   9. HOME 9
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-09ec370 {
+		> .elementor-element-populated {
+			> .elementor-widget-wrap {
+				@include landscape-max-1025 {
+					padding-left: 15px;
+    				padding-right: 15px;
+				}
+
+				@include portrait-max-540 {
+					padding-left: 15px;
+    				padding-right: 15px;
+				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------
+   10. HOME 10
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-ae32084,
+	&.elementor-element-42325bf {
+		.elementor-column {
+			> .elementor-element-populated {
+				@include landscape-max-740 {
+					padding: 10px !important;
+				}
+
+				@include portrait-max-540 {
+					padding: 10px !important;	
+				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------
+   11. HOME 11
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-ddf5a34 {
+		.elementor-column {
+			> .elementor-element-populated {
+				@include landscape-max-740 {
+					padding: 10px !important;
+				}
+
+				@include portrait-max-540 {
+					padding: 10px !important;	
+				}
+			}
+		}		
+	}
+}
+
+/* ---------------------------------------------
+   12. HOME 12
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-2b55bcc,
+	&.elementor-element-a10abb3 {
+		@include landscape-max-1025 {
+			padding-left: 10px;
+    		padding-right: 10px;			
+		}
+
+		@include portrait-max-800 {
+			padding-left: 10px;
+    		padding-right: 10px;
+		}
+	}
+
+	&.elementor-element-ebd3f99 {
+		.elementor-column {
+			> .elementor-element-populated {
+				@include landscape-max-740 {
+					padding: 10px !important;
+				}
+
+				@include portrait-max-540 {
+					padding: 10px !important;	
+				}
+			}
+		}
+	}
+}
+
+/* ---------------------------------------------
+   13. BLOG
+   ------------------------------------------ */
+
+
+/* ---------------------------------------------
+   14. CONTACT PAGE
+   ------------------------------------------ */
+
+.elementor-element {
+	&.elementor-element-7ec3f04,
+	&.elementor-element-95465f0 {
+		> .elementor-element-populated {
+			@include landscape-max-1025 {
+				padding: 0 !important;
+			}
+
+			@include portrait-max-540 {
+				padding: 0 !important;
+			}
+		}
+	}
+}

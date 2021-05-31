@@ -1,0 +1,29 @@
+.category-item{
+    text-align: center;
+}
+.product-category {
+    position: relative;
+    text-align: center;
+    .hover-mask {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        margin: 0;
+        padding: 8px 0;
+        display: inline-block;
+        background: rgba(255,255,255,0.8);
+        width: 100%;
+        text-align: center;
+        text-transform: capitalize;
+        z-index: 9;
+        a{
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        p{
+            font-size: 14px; 
+            margin: 0;
+        }
+    }
+}

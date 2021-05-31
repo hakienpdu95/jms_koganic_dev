@@ -1,0 +1,181 @@
+
+
+/** ------------------------------------------------------------------------------------------------
+* SOCIAL ICONS
+* ------------------------------------------------------------------------------------------------ */
+.social-list-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline-block;
+
+        a {
+            border-radius: 50%;
+            padding: 6px;
+            color: #828282;
+        }
+    }
+
+}
+
+.footer {
+    .koganic-social-icons {
+        // Style
+        &.icon-style-default,
+        &.icon-style-icon{
+            .koganic-social-icon{
+                a{
+                    padding: 10px 12px;
+                    margin: 0;
+                    line-height: 1;
+                }
+            }
+        }        
+    }
+}
+.koganic-social-icons {
+    .koganic-social-icon a{
+        display: inline-block;
+    }
+    // Align
+    &.icon-align-left{
+        justify-content: flex-start;
+    }
+    &.icon-align-center{
+        justify-content: center;
+    }
+    &.icon-align-right{
+        justify-content: flex-end;
+    }
+    // Style
+    &.icon-style-default,
+    &.icon-style-icon{
+        .koganic-social-icon{
+            a{
+                text-align: center;
+                line-height: 25px;
+                padding: 0 5px;
+                margin: 0 5px;
+            }
+            &:first-child{
+                a{
+                    padding-left: 0;
+                    margin-left:0
+                }
+            }
+            &:last-child{
+                a{
+                    padding-right: 0;
+                    margin-right:0
+                }
+            }
+        }
+    }
+    &.icon-style-icon-background{
+        .koganic-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background: #f6f6f6;
+                margin: 0 5px;
+            }
+        }
+    }
+    &.icon-style-icon-background-circle{
+        .koganic-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 42px;
+                background: #f6f6f6;
+                border-radius: 100%;
+                margin: 0 5px;
+            }
+        }
+    }
+    &.icon-style-icon-background-border{
+        .koganic-social-icon{
+            a{
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                line-height: 42px;
+                border: 1px solid #f6f6f6;
+                margin: 0 5px;
+            }
+        }
+    }
+    // Size
+    &.icon-size-default,
+    &.icon-size-small{
+        i{
+            font-size: 20px;
+        }
+    }
+    &.icon-size-medium{
+        i{
+            font-size: 28px;
+        }
+    }
+    &.icon-size-large{
+        i{
+            font-size: 30px;
+        }
+    }
+}
+
+// Color
+.icon-color-default,
+.icon-color-black{
+    .koganic-social-icon a{
+        color: black;
+        &:hover{
+            @extend .color-primary;
+        }
+    }
+}
+.icon-color-white{
+    .koganic-social-icon a{
+        color: white;
+        &:hover{
+            @extend .color-primary;
+        }
+    }
+}
+.icon-color-primary{
+    .koganic-social-icon a{
+        @extend .color-primary;
+    }
+}
+
+.koganic-social-icon {
+    &.social-facebook {
+        a {
+            color: #1877F2;
+        }
+    }
+    &.social-twitter {
+        a {
+            color: #1DA1F2;
+        }
+    }
+
+    &.social-instagram {
+        a {
+            color: #EEAB6E;
+        }
+    }
+}
+
+@media (min-width: 791px) {
+    footer {
+        .koganic-social-box {
+            margin-top: 11px;
+        }
+    }
+}

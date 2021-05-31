@@ -1,0 +1,564 @@
+$cakes-color-primary: rgba(211, 24, 58, 0.75) !default;
+$cakes-color-body: rgba(63, 40, 3, 0.7) !default;
+
+.home-cakes {
+	.primary-menu {
+		a {
+			@include min-1300 {
+				color: white;
+			}
+		}
+	}
+
+	.header-action {
+		.header-account {
+			&:before {
+			    color: white;
+			}
+		}
+
+		a {
+			@include min-1300 {
+				color: white;
+			}
+		}
+	}
+
+	.testimonials-style-center {
+	    .owl-theme {
+	        .owl-nav {
+	            [class*="owl-"] {
+	                &.owl-next {
+	                	right: 30px;
+
+	                    @include min-1300 {
+	                        right: 528px;
+	                    }
+	                }
+	                
+	                &.owl-prev {
+	                	left: 30px;
+	                    
+	                    @include min-1300 {
+	                        left: 465px;
+	                    }
+	                }
+	            }
+	        }
+	    }
+
+		.owl-item {
+			&.active.center {
+				@include min-1300 {
+					width: 850px !important;
+					min-width: 850px;
+					max-width: 850px;		
+				}
+			}
+		}
+	}
+	.jmstestimonial-box {
+		.pt-reviewsbox-description {
+			.pt-content {
+				color: #3F2803;
+			}
+		}
+
+		.pt-reviewsbox-author {
+			.pt-title {
+				> strong {
+					color: #3F2803;
+				}	
+
+				span {
+					color: $cakes-color-body;
+				}
+			}
+		}
+	}
+}
+
+.elementor-element {
+	&.elementor-element-ed2286f {
+		position: relative;
+		padding-bottom: 20px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: rgba(255,255,255,.2);
+			height: 1px;
+			width: 100%;
+			max-width: 520px;
+		}
+
+		h5 {
+			font-size: 24px;
+			font-weight: 600;
+			color: #FFF;
+			margin-bottom: 28px;
+		}
+
+		p > strong {
+			color: #D52646;
+			font-size: 20px;
+			font-weight: 700;
+			margin-bottom: 14px;
+		}
+
+		ul {
+			font-weight: 500;
+			margin-top: 13px;
+
+			li {
+				&:not(:last-of-type) {
+					margin-bottom: 13px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-b3b1411 {
+		@include min-1300 {
+			margin-top: 5px;
+		}
+
+		iframe {
+			border-radius: 10px !important;
+		}
+	}
+
+	&.elementor-element-e87cbe9 {
+		font-weight: 500;
+
+		ul {
+			li {
+				margin-bottom: 13px;
+			}
+		}
+	}
+
+	&.elementor-element-bd1fcea {
+		font-size: 17px;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-d13b914 {
+		@include min-791 {
+			text-align: right !important;
+		}		
+	}
+
+	&.elementor-element-9013d9b {
+		margin-top: 78px;
+	}
+
+	&.elementor-element-410dbd7 {
+		margin-top: 3px;
+    	margin-bottom: 13px;
+	}
+
+	&.elementor-element-1b1c65d,
+	&.elementor-element-cf478dc,
+	&.elementor-element-ed5dc5d,
+	&.elementor-element-6202308 {
+		margin-bottom: 4px;
+		
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+
+	&.elementor-element-0bfdc6b {
+		margin-bottom: 0;
+		
+		h3 {
+			margin-bottom: 0;
+		}		
+	}
+
+	&.elementor-element-1eb6459 {
+		margin-top: -38px;
+	}
+
+	&.elementor-element-dfecbe4 {
+		h3 {
+			margin-bottom: 0;
+		}		
+	}
+
+	&.elementor-element-b75ea6a {
+		margin-top: -39px;
+	}
+
+	&.elementor-element-6fa2428 {
+		img {
+			opacity: 1 !important;
+		}
+
+		.jmsservice-box {
+			.item {
+				padding: 0 15px;
+				padding-top: 60px;
+			}
+
+			.image {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 140px;
+    			height: 140px;
+    			border-radius: 100%;
+    			overflow: hidden;
+				box-shadow: 0px 0px 60px rgba(0,0,0,0.09);
+			}
+
+			.title-service {
+				font-size: 30px;
+			    font-weight: 600;
+			    color: #3F2803;
+			    margin-bottom: 0;
+			    margin-top: 34px;
+			}
+
+			.description {
+				font-size: 17px;
+				font-weight: 400;
+				color: rgba(63, 40, 3, 0.7);
+				margin-top: 19px;
+			}
+		}
+	}
+
+	&.elementor-element-bc71754 {
+		margin-top: 66px;
+		
+		&:after {
+			content: '';
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #F9F6ED;
+			display: block;
+
+			@include min-1300 {
+				height: 160px;
+			}
+		}
+
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 6px !important;
+
+			.banner-text {
+				padding: 15px;
+				padding-bottom: 26px;
+				height: 100%;
+			    width: 100%;
+			    display: inline;
+
+			    > .banner-inner {
+			    	width: 100%;
+    				height: 100%;
+
+    				> .content {
+				    	width: 100%;
+	    				height: 100%;    
+	    				position: relative;					
+    				}
+			    }
+			}
+
+			.button-banner-wrapper {
+				position: absolute;
+			    display: inline-block;
+			    width: 100%;
+			    bottom: 0;
+			    left: 0;
+
+			}
+		}
+	}
+
+	&.elementor-element-e85af78 {
+		.title {
+			max-width: 170px;
+		}
+	}
+
+	&.elementor-element-c8ebb01 {
+		.title {
+			max-width: 160px;
+		}
+	}
+
+	&.elementor-element-e85af78,
+	&.elementor-element-c8ebb01 {
+		.banner-box {
+			.banner-text {
+				@include min-1300 {
+					padding-left: 32px;
+    				padding-top: 32px;
+				}
+			}
+		}
+
+		.title {
+			p {
+				@extend .default_font02;
+				line-height: 1;
+			}
+		}
+	}
+
+	&.elementor-element-8d8f647 {
+		.banner-box {
+			.banner-text {
+				@include min-1300 {
+					padding-left: 32px;
+    				padding-top: 32px;
+				}
+			}
+		}
+
+		.title {
+			max-width: 230px;
+			
+			p {
+				line-height: 1.2;
+				font-weight: 200 !important;
+
+				span {
+					font-weight: 500;
+				}
+			}
+		}
+
+		.subtitle {
+			margin-top: 4px;
+		}
+	}
+
+	&.elementor-element-39a6780 {
+		background-color: #F9F6ED;
+		padding-top: 68px;
+		padding-bottom: 60px;
+	}
+
+	&.elementor-element-021d5c3 {
+		margin-bottom: 30px;
+	}
+
+	&.elementor-element-9b90f83 {
+		.item-wrap {
+			.product-item {
+				margin-bottom: 30px;
+			}
+		}
+		
+		.title-size-large {
+			margin-bottom: 31px;
+		}
+
+		.jms-tabs-title {
+			margin-bottom: 60px;
+			
+			ul {
+				li {
+					border-color: #FFF;
+					font-size: 22px;
+    				color: #464647;
+
+    				&.active,
+    				&:hover {
+    					@extend .color-primary;
+    					background-color: #FFF;
+    					box-shadow: 0 0 30px rgba(0, 0, 0, 0.12);
+    				}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-885eb3f {
+		background-image: url('assets/images/demo/cakes-banner-4.png');
+	    background-repeat: no-repeat;
+	    background-position: center center;		
+	    background-size: cover;		
+	    padding-top: 102px;
+    	padding-bottom: 100px;
+	}
+
+	&.elementor-element-fbcd608 {
+		@include min-1300 {
+			justify-content: flex-end;
+		}
+
+		>.elementor-element-populated {
+			background-color: #FFF;
+		    padding-top: 54px;
+		    padding-bottom: 38px;
+		    padding-left: 99px;
+		    padding-right: 98px;	
+		    border-top-right-radius: 100px;
+    		border-bottom-left-radius: 100px;
+
+		    @include min-1300 {
+		    	max-width: 932px;
+		    }		
+		}
+	}
+
+	&.elementor-element-bddf327 {
+		margin-bottom: 0;
+
+		.title {
+			margin-bottom: 13px;
+		}
+	}
+
+	&.elementor-element-d49c362 {
+		.elementor-accordion {
+			.elementor-tab-title {
+				padding: 24px 0;
+    			padding-bottom: 19px;
+			}
+
+			.fa-minus:before {
+				content: "\e15b";
+				font-size: 18px;
+				@extend .material-icons-outlined;
+			}
+
+			.fa-plus:before {
+				content: "\e145";
+				font-size: 18px;
+				@extend .material-icons-outlined;
+			}
+
+			.elementor-accordion-item {
+				border: none;
+			    border-bottom: 1px solid #F4F4F4;
+
+			    &:last-of-type {
+			    	border-bottom: none;
+			    }
+			}
+
+			.elementor-accordion-icon {
+				float: right;
+    			text-align: center;
+			    background-color: #F5F5F5;
+			    width: 33px;
+			    height: 33px;
+			    display: inline-flex;
+			    justify-content: center;
+			    align-items: center;
+			    border-radius: 50px;    
+			    @extend .color-primary;
+			    margin-top: -6px;
+
+			    i.fa-minus,
+			    i.fa-plus {
+				    margin-top: 4px;
+				    margin-left: -1px;
+				}			
+			}
+
+			.elementor-accordion-title {
+				font-size: 26px;
+    			font-weight: 600;
+    			@extend .color-primary;
+			}
+			
+			.elementor-tab-content {
+				border-top: none;
+				font-size: 17px;
+				font-weight: 400;
+				color: rgba(63, 40, 3, 0.7);
+				padding: 0;
+				width: calc(100% - 54px);
+
+				p {
+					padding-bottom: 16px;
+				}
+
+				p:first-of-type {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-1434765 {
+		margin-bottom: 86px;
+	}
+
+	&.elementor-element-76713e3 {
+		margin-bottom: 85px;
+		margin-top: -1px;
+	}
+
+	&.elementor-element-516580e {
+		@include min-1300 {
+			margin-bottom: 32px;
+		}
+	}
+
+	&.elementor-element-fafe77b,
+	&.elementor-element-2c48753,
+	&.elementor-element-6e12fb7,
+	&.elementor-element-bfc07d7 {
+		margin-bottom: 0;
+
+		.title {
+			margin-bottom: 4px;
+		}
+	}
+
+	&.elementor-element-828345b {
+		margin-top: 94px;
+	}
+	
+	&.elementor-element-7a1d5cb {
+		margin-top: 84px;
+	}
+
+	&.elementor-element-ea3c0d4 {
+		margin-bottom: 0;
+
+		.title {
+			margin-bottom: 0px;
+		}
+	}
+
+	&.elementor-element-6fa2428 {
+		@include min-1300 {
+			margin-top: -23px;
+		}
+	}
+}
+
+.footer-3 {
+	background-image: url('assets/images/demo/cakes-footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;		
+    background-size: cover;
+    color: white;
+    padding-top: 76px;
+
+    hr {
+	    border-top: 1px solid rgba(255,255,255,.15);
+	}
+
+	.elementor-widget-text-editor {
+		color: white;
+	}
+}

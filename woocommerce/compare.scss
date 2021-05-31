@@ -1,0 +1,468 @@
+$color_1: #777777;
+$color_2: #fff;
+$color_3: #333333;
+$color_4: red;
+$color_5: #ffffff;
+$color_6: #FFFFFF;
+$color_7: #48CAB2;
+$color_8: #990000;
+$font_family_1: Neue Einstellung, Open Sans, san-serif;
+$background_color_1: white;
+$background_color_2: #f2f2f2;
+$background_color_3: red;
+$background_color_4: #48CAB2;
+
+/**
+ * The style of the woocommerce compare products
+ */
+/* ###############
+FIXED COLUMNS
+##############*/
+/*############################
+ * COMPARE
+#############################*/
+table.DTFC_Cloned {
+	thead {
+		background-color: $background_color_1;
+	}
+	tfoot {
+		background-color: $background_color_1;
+	}
+}
+div.DTFC_Blocker {
+	background-color: $background_color_1;
+}
+div.DTFC_LeftWrapper {
+	table.dataTable {
+		margin-bottom: 0;
+		z-index: 2;
+	}
+	table.dataTable.no-footer {
+		border-bottom: none;
+	}
+}
+div.DTFC_RightWrapper {
+	table.dataTable {
+		margin-bottom: 0;
+		z-index: 2;
+	}
+	table.dataTable.no-footer {
+		border-bottom: none;
+	}
+}
+body {
+	font-family: $font_family_1;
+	font-size: 16px;
+	line-height: 1.51em;
+	color: $color_1;
+	background: none !important;
+	margin: 0;
+	.dataTables_scrollHead {
+		display: none;
+	}
+
+	h1 {
+		background: transparent;
+	    color: #333;
+	    font-weight: 800;
+	    padding: 10px;
+	    border-bottom: 2px solid #fff;
+	    display: block;
+	    text-transform: capitalize;
+	    font-size: 36px;
+	    margin: 0;
+	    margin-top: 30px;
+	    margin-bottom: 24px;
+	    text-align: center;
+	}
+	#yith-woocompare {
+		padding: 10px;
+	}
+}
+table.dataTable.compare-list {
+	thead {
+		th {
+			border: 0;
+			vertical-align: middle;
+		}
+		td {
+			border: 0;
+			vertical-align: middle;
+		}
+	}
+	tfoot {
+		td {
+			border: 0;
+			vertical-align: middle;
+		}
+		th {
+			border: 0;
+			vertical-align: middle;
+		}
+	}
+	tbody {
+		th {
+			border-right: 1px solid #e7e7e7;
+			border-top: 1px solid #e7e7e7;
+			border-bottom: none;
+			border-left: 1px solid #e7e7e7;
+			padding: 10px;
+			vertical-align: middle;
+		}
+		tr.image, 
+		tr.title, 
+		tr.add-to-cart,
+		tr.price:not(.repeated) {
+			th , td {
+				border-bottom: none !important;	
+			}
+		}
+		td {
+			border-right: 1px solid #e7e7e7;
+			border-top: 1px solid #e7e7e7;
+			border-bottom: none;
+			border-left: none;
+			padding: 10px;
+			vertical-align: middle;
+		}
+		tr {
+			&:last-child {
+				th {
+					border-bottom: 1px solid #e7e7e7;
+				}
+				td {
+					border-bottom: 1px solid #e7e7e7;
+				}
+			}
+		}
+		.product_info {
+			td {
+				vertical-align: top;
+			}
+		}
+	}
+}
+.DTFC_LeftFootWrapper {
+	table.compare-list {
+		border: 0;
+	}
+}
+.DTFC_LeftHeadWrapper {
+	table.compare-list {
+		border: 0;
+	}
+}
+table.compare-list {
+	td {
+		width: 220px;
+		max-width: 220px;
+		min-width: 220px;
+		text-align: center;
+		vertical-align: middle;
+		img {
+			background: none repeat scroll 0 0 #FFFFFF;
+			border: 1px solid #DADADA;
+			height: auto;
+			max-width: 100%;
+			padding: 3px;
+			margin-bottom: 20px;
+			max-width: none;
+		}
+	}
+	width: 100%;
+	border-bottom: 0;
+	border-top: 0;
+	margin: 0;
+	table-layout: auto;
+	tbody {
+		th {
+			width: 150px;
+			max-width: 150px;
+			min-width: 150px;
+			overflow: hidden;
+			text-align: left;
+			color: $color_3;
+			font-size: 14px;
+			font-weight: 800;
+    		text-transform: capitalize;
+		}
+		td.last-column {
+			width: auto;
+			border-right: 0;
+		}
+	}
+	tr.image {
+		td {
+			border-top: 0;
+		}
+		th {
+			border-top: 0;
+		}
+	}
+	thead {
+		th {
+			a.close {
+				float: right;
+				margin-right: 10px;
+				font-weight: 600;
+				font-size: 0.9em;
+				color: $color_2;
+				text-decoration: none;
+			}
+		}
+	}
+	.remove {
+		td {
+			a {
+				color: $color_1;
+				text-decoration: none;
+				&:hover {
+					color: $color_7;
+					.remove {
+						background-color: $background_color_3;
+						color: $color_5;
+					}
+				}
+				.remove {
+					border-radius: 100% 100% 100% 100%;
+					color: $color_4;
+					display: inline-block;
+					font-size: 1em;
+					font-weight: 600;
+					height: 1em;
+					line-height: 0.81em;
+					text-align: center;
+					text-decoration: none;
+					width: 1em;
+				}
+			}
+		}
+	}
+	.add-to-cart {
+		td {
+			a {
+				display: inline-block;
+				margin: 10px 0;
+				background-color: $background_color_4;
+				border: 0 none;
+				color: $color_6;
+				font-weight: normal;
+				line-height: normal;
+				padding: 5px 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+				cursor: pointer;
+				font-size: 13px;
+    			font-weight: 400;
+				
+				&:hover {
+					background: #333333;
+					color: $color_2;
+				}
+			}
+		}
+	}
+	.stock {
+		td {
+			span {
+				color: $color_7;
+			}
+			span.out-of-stock {
+				color: $color_8;
+			}
+		}
+	}
+	.price {
+		td {
+			text-decoration: underline;
+		}
+	}
+	td.odd {
+		background: #F7F7F7;
+	}
+	td.even {
+		background: #fff;
+	}
+}
+.rtl {
+	table.compare-list {
+		tbody {
+			th {
+				text-align: right;
+			}
+		}
+	}
+}
+#yith-woocompare-table_wrapper {
+	margin: 10px 0;
+}
+h1 {
+	a.close {
+		float: right;
+		margin-right: 10px;
+		font-weight: 600;
+		font-size: 0.9em;
+		color: $color_2;
+		text-decoration: none;
+	}
+}
+.yith-woocompare-widget {
+	ul.products-list {
+		a.remove {
+			float: left;
+		}
+	}
+}
+
+table.compare-list {
+     margin-bottom: 0!important;
+
+     th {
+         padding-left: 25px;
+         padding-right: 25px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         font-weight: 600;
+         border-bottom: none;
+         font-size: 16px!important;
+         border-bottom:1px solid #E6E6E6;
+     }
+
+     td {
+         padding-left: 15px;
+         padding-right: 15px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+         border-bottom: 1px solid;
+         border-right:1px solid;
+         border-color:#E6E6E6;
+
+         &.odd,
+         &.even {
+           background-color: transparent;
+         }
+
+         img {
+             margin-bottom: 0px;
+             max-width: 100%;
+             background: none;
+             border: none;
+             padding: 0;
+         }
+     }
+
+     tr {
+
+     	&.description {
+     		font-size: 16px;
+     		font-weight: 400;
+    		color: #777777;
+     	}
+         &.remove,
+         &.image,
+         &.title,
+         &.price,
+         &.add-to-cart {
+
+             th {
+                 text-indent:0;
+             }
+
+             th,
+             td {
+                 padding-top: 15px;
+                 padding-bottom: 15px;
+                 border-bottom:1px solid #E6E6E6;
+             }
+         }
+
+         &.title {
+             display: table-row;
+
+             td {
+                font-size: 16px;
+    			color: #333333;
+                text-transform: none;
+             }
+         }
+
+         &.price {
+             td {
+                color: $color_7;
+                text-decoration: none;
+                font-size: 16px;
+    			font-weight: 400;
+             }
+         }
+
+         &.description {
+             td {
+                 p:last-child {
+                     margin-bottom: 0;
+                 }
+             }
+         }
+
+         &.stock {
+
+             td {
+
+                 span {
+                     font-weight: 600;
+                 }
+             }
+
+         }
+
+         &.add-to-cart {
+
+         	.pt-icon {
+         		display: none;
+         	}
+             td {
+
+                  a {
+                      margin: 0;
+                  }
+             }
+
+             .blockUI {
+                 display: none!important;
+             }
+         }
+
+         &.no-products {
+
+             td {
+                 color: black;
+                 font-weight: 600;
+                 text-transform: capitalize;
+                 border-left: 1px solid #e7e7e7;
+             }
+         }
+
+         &.remove {
+             a {
+                text-decoration: none;
+			    font-size: 16px;
+			    font-weight: 800;
+			    letter-spacing: .3px;
+			    text-transform: capitalize;
+			    line-height: 30px;
+			    position: relative;
+			    color: #333333;
+
+                 .remove {
+                     display: none;
+                 }
+             }
+         }
+
+         &:last-child {
+
+             td {
+                 border-bottom:none;
+             }
+         }
+     }
+ }

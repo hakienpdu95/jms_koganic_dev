@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'koganic';
+	font-display: swap;
+	src: local("koganic"), 	url("assets/fonts/koganic.eot");
+	src: local("koganic"), 	url("assets/fonts/koganic.eot") format("embedded-opentype"), 
+							url("assets/fonts/koganic.ttf") format("truetype"),
+							url("assets/fonts/koganic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  	font-family: 'Material Icons Outlined';
+  	font-style: normal;
+  	font-weight: 400;
+  	src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v56/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+}

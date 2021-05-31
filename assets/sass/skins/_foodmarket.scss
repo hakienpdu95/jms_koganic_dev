@@ -1,0 +1,619 @@
+$food-market-color-primary: #7AC44B !default;
+$food-market-color-body: #3F2803 !default;
+
+
+.home-food-market {
+	.topbar {
+		.header-block.text  {
+			color: $food-market-color-body;
+		}
+	    
+	    .wrap-topbar {
+	        border-bottom: 1px solid #FFF;
+	    }		
+	}
+
+	.logo_image {
+		img {
+			max-width: 210px;
+		}
+	}
+
+	.jms-tabs-title {
+		margin-bottom: 59px;
+
+		ul {
+			li {
+				border-color: #FFF;
+				color: rgba(63, 40, 3, 0.7);
+				margin: 0 7.5px;
+
+				&.active,
+				&:hover {
+					background-color: white;
+					box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+				}
+			}
+		}
+	}
+}
+
+.elementor-element {
+	&.elementor-element-9bb2cbc {
+		.owl-stage-outer {
+			@include min-1300 {
+				margin: -20px;
+    			padding: 20px;
+			}
+		}
+
+		.jmsservice-box {
+			.item {
+				background-color: #FFF;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+				border-radius: 20px;
+				overflow: hidden;
+				padding: 0 0 12px 0;
+			}
+		}
+
+		.title-service {
+			font-size: 24px;
+			font-weight: 500;
+			line-height: 1.1;
+			color: $food-market-color-body;
+		}
+	}
+
+	&.elementor-element-2caccb0 {
+		margin-top: 76px;
+
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 20px;
+			overflow: hidden;
+
+			.content {
+			    @include min-1300 {
+			    	max-width: 313px;
+				    text-align: left;
+				    float: right;
+			    }
+
+			    .subtitle {
+			    	margin-top: -17px;
+			    }
+
+			    .subsubtitle {
+			    	margin-top: 15px;
+
+			    	@include min-1300 {
+    					margin-left: -51px;
+			    	}
+
+			    	p {
+			    		display: inline-flex;
+					    line-height: 1.3;
+					    position: relative;
+					    min-width: 232px;
+					    justify-content: center;
+					    align-items: center;
+
+    					&:before {
+    						content: '';
+    						position: absolute;
+							background-image: url('assets/images/demo/food-market-pin-icon-1.png');
+						    background-repeat: no-repeat;
+						    background-position: top center;		
+						    background-size: contain;
+						    width: 232px;
+						    height: 69px;    						
+    						z-index: -1;
+    					}
+			    	}
+			    }
+			}
+		}
+	}
+
+	&.elementor-element-bbc6f9c {
+		.banner-box {
+			.content {
+				.subsubtitle {
+					@include min-1300 {
+    					margin-left: -42px;
+			    	}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-d4b5d6d {
+		background-image: url('assets/images/demo/food-market-banner-9.jpg');
+	    background-repeat: no-repeat;
+	    background-position: top center;		
+	    background-size: cover;
+
+	    @include min-1300 {
+	    	justify-content: center;
+	    }
+
+	    .mc4wp-form {
+	    	text-align: left;
+
+	    	.mc4wp-form-fields {
+	    		flex-direction: column;
+			    justify-content: center;
+			    align-items: flex-start;
+
+			    .mc4wp-discount {
+			    	color: $food-market-color-primary;
+			    	font-size: 32px;
+			    	font-weight: 600;
+			    	margin: 0;
+			    }
+
+			    .text1 {
+			    	display: block !important;
+			    	color: rgba(63, 40, 3, 0.7);
+			    	line-height: 1.8;
+			    	margin-top: 14px;
+			    	margin-bottom: 31px;
+
+			    	@include min-1300 {
+			    		max-width: 446px;
+			    	}
+			    }
+
+			    .mc4wp-default {
+			    	flex-direction: column;
+			    	width: 100%;
+			    }
+
+			    input[type="email"] {
+			    	border: 2px solid #F1F1F1;
+			    	border-radius: 50px;
+			    	background-color: #FFF;
+			    	color: rgba(63, 40, 3, 0.7);
+
+			    	&::placeholder { 
+		              	color: rgba(63, 40, 3, 0.7);
+		              	opacity: 1;
+		            } 
+			    }
+
+			    button[type="submit"] {
+			    	margin-left: 0;
+				    line-height: 50px;
+				    padding: 0 15px;
+				    color: #FFF;
+				    background-color: $food-market-color-primary;
+				    margin-top: 22px;
+				    font-size: 21px;
+				    font-weight: 700;
+
+				    span {
+				    	position: relative;
+				    	top: 2px;
+				    }
+			    }
+
+			    .mc4wp-text {
+			    	display: block;
+			    	font-size: 14px;
+				    font-weight: 400;
+				    font-style: italic;
+				    color: rgba(63, 40, 3, 0.5);
+				    margin-top: 30px;
+			    }
+	    	}
+	    }
+
+	    .elementor-social-icons-wrapper {
+	    	> div:not(:last-of-type) {
+			    margin-right: 5px;
+			}
+
+	    	.elementor-grid-item {
+	    		width: 62px;
+			    height: 62px;
+			    display: inline-flex;
+			    justify-content: center;
+			    align-items: center;
+			    border: 2px solid;
+			    border-color: #EFEFEF;
+			    border-radius: 50px;
+	    	}
+	    }
+	}
+
+	&.elementor-element-d4b5d6d {
+		> .elementor-element-populated {
+			@include min-1300 {
+				max-width: 540px;
+				position: relative;
+    			left: 97px;
+			}
+		}
+	}
+
+	&.elementor-element-d4b5d6d,
+	&.elementor-element-9fd959c {
+		padding-top: 25px;
+		padding-bottom: 18px;
+		
+		@include min-1300 {
+			padding-top: 54px;
+			padding-bottom: 46px;
+		}
+	}
+
+	&.elementor-element-e3ab7f6 {
+		margin-top: 30px;
+	}
+
+	&.elementor-element-9fd959c {
+		background-image: url('assets/images/demo/food-market-banner-10.jpg');
+	    background-repeat: no-repeat;
+	    background-position: top center;		
+	    background-size: cover;
+	}
+
+	&.elementor-element-0d32fa6 {
+		> .elementor-widget-container {
+			padding-left: 50px;
+			
+			@include min-1300 {
+				padding-left: 114px;
+			}
+		}
+
+		h5 {
+			font-size: 32px;
+			font-weight: 600;
+			color: $food-market-color-primary;
+			margin-bottom: 9px;
+			margin-top: 3px;
+		}
+
+		.textwidget {
+			ul {
+				color: rgba(63, 40, 3, 0.7);
+				font-size: 16px;
+				font-weight: 400;
+				position: relative;
+				padding-left: 116px;
+				display: inline-flex;
+			    flex-direction: column;
+			    justify-content: flex-start;
+			    align-content: flex-start;
+			    min-height: 101px;
+			    margin-bottom: 0;
+
+				&:before {
+					content: '';
+					background-image: url('');
+				    background-repeat: no-repeat;
+				    background-position: center center;		
+				    background-size: contain;						
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 95px;
+				}
+
+				&:nth-of-type(1) {
+					&:before {
+						background-image: url('assets/images/demo/food-market-icon-1.png');
+						height: 101px;
+					}
+				}
+
+				&:nth-of-type(2) {
+					&:before {
+						background-image: url('assets/images/demo/food-market-icon-2.png');
+						height: 101px;
+					}
+				}
+
+				&:nth-of-type(3) {
+					&:before {
+						background-image: url('assets/images/demo/food-market-icon-3.png');
+						height: 98px;
+					}
+				}
+
+				&:not(:last-of-type) {
+					margin-bottom: 23px;
+				}
+
+				li {
+					&:nth-of-type(1) {
+						font-size: 24px;
+						font-weight: 600;
+						color: $food-market-color-body;
+						line-height: 1.2;
+    					margin-bottom: 11px;
+    					position: relative;
+    					margin-top: 7px;
+					}
+
+					&:nth-of-type(2) {
+
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					&:not(:first-of-type) {
+						line-height: 1.8;
+
+						@include min-1300 {
+							max-width: 354px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.elementor-element-cc2de32 {
+		background-image: url('assets/images/demo/food-market-banner-16.jpg');
+	    background-repeat: no-repeat;
+	    background-position: top center;		
+	    background-size: cover;		
+	    padding-top: 62px;
+    	padding-bottom: 50px;
+
+	    .service-elements {
+	    	.service-title {
+	    		font-size: 26px;
+	    		font-weight: 600;
+	    		line-height: 1.2;
+	    		margin-top: 10px;
+	    		margin-bottom: 11px;
+	    	}
+
+	    	.service-subtitle {
+	    		font-size: 18px;
+	    		font-weight: 400;
+	    		margin: 0;
+	    	}
+	    }
+	}
+
+	&.elementor-element-11d5396 {
+		color: rgba(63, 40, 3, 0.7);
+		line-height: 1.8;
+
+		h5 {
+			margin-bottom: 21px;
+		}
+
+		.textwidget {
+			p {
+				@include min-1300 {
+					max-width: 333px;
+				}
+			}
+		}
+
+		ul {
+			margin-top: 19px;
+
+			a:hover:after,
+			a:focus:after {
+				opacity: 0 !important;
+			}
+
+			li {
+				margin-bottom: 10px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+			}
+
+			img {
+				max-width: 200px;
+			}
+		}
+	}
+
+	&.elementor-element-567b999 {
+		margin-bottom: 18px;
+		@extend .default_font;
+
+		ul {
+			font-size: 16px;
+			font-weight: 400;
+			position: relative;
+			margin-bottom: 0;
+			padding-left: 53px;
+
+			&:before {
+				content: '';
+				background-image: url('assets/images/demo/organic-icon-headset-mic.png');
+		        background-repeat: no-repeat;
+		        background-position: center center;		
+		        background-size: contain;
+		        width: 38px;
+		        height: 46px;
+		        display: inline-block;
+			    position: absolute;
+			    left: 0;
+			    top: 4px;
+			}
+
+			li {
+				margin-bottom: 3px;
+
+				&:nth-of-type(2) {
+					font-size: 20px;
+					font-weight: 700;
+					color: #F1402A;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-9ae8b0c {
+		margin-bottom: 9px;
+		@extend .default_font;
+		color: rgba(63,40,3,.7);
+
+		ul {
+			font-size: 16px;
+    		font-weight: 500;
+
+			li {
+				margin-bottom: 9px;
+			}
+		}
+	}
+	
+	&.elementor-element-1c8a551 {
+		@include min-1300 {
+			margin-top: 61px;
+		}
+
+		@include min-791 {
+			text-align: right !important;
+		}
+	}
+
+	&.elementor-element-e8a1f3a {
+		@include min-1300 {
+			margin-top: 68px;
+		}
+
+		ul.menu {
+			margin-bottom: 0;
+			
+			li {
+				display: inline;
+
+				&:not(:last-of-type) {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-85a9484 {
+		margin-bottom: 7px;
+		
+		img {
+			max-width: 210px;
+		}
+	}	
+
+	&.elementor-element-12a5a02 {
+		font-weight: 500;
+		color: rgba(63,40,3,.7);
+		@extend .default_font;
+		font-size: 16px;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	&.elementor-element-54ca5ca {
+		margin-top: 59px;
+	}	
+
+	&.elementor-element-686fec6 {
+		margin-bottom: 26px;
+	}	
+
+	&.elementor-element-963bd21 {
+		margin-bottom: 90px;
+	}
+
+	&.elementor-element-2373cee {
+		margin-top: 111px;
+		margin-bottom: 30px;
+
+		@include min-1200 {
+			margin-bottom: 50px;
+		}
+	}
+
+	&.elementor-element-ea7dbbc {
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+    		top: 100%;
+			background-image: url('assets/images/demo/food-market-banner-17.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 505px;
+		    height: 980px;
+		    display: none;
+		    z-index: 0;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+	}
+
+	&.elementor-element-45554ab {
+		margin-top: 55px;
+		padding-bottom: 154px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+    		bottom: 0;
+			background-image: url('assets/images/demo/food-market-banner-8.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 589px;
+		    height: 362px;
+		    display: none;
+		    z-index: 0;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}		
+	}
+
+	&.elementor-element-9e6de0a {
+		.addon-title {
+			margin-bottom: 21px;
+			color: $food-market-color-body;
+		}
+	}
+}
+
+.footer-6 {
+	padding-top: 86px;
+
+	h5 {
+		color: $food-market-color-body;
+	}
+
+	hr {
+		border-top: 1px solid #E2E2E2;
+	}
+
+	ul.menu {
+		font-weight: 500;
+
+		li {
+			margin-bottom: 9px;
+		}
+
+		a {
+			color: rgba(63, 40, 3, 0.7);
+		}
+	}	
+}

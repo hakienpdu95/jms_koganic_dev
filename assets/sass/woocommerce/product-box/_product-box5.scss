@@ -1,0 +1,122 @@
+.koganic-products-style-5 {
+	.owl-dots {
+		@include min-1300 {
+			z-index: 0;
+		}
+	}
+}
+
+.product-style-5 {
+	.product-box {
+		position: relative;
+
+		.badge {
+			display: none !important;
+		}
+
+		.content-product-imagin {
+		    background: #171F32;
+		    height: 65%;
+		    left: 0;
+		    bottom: 0%;
+		    width: 100%;
+		    position: absolute;
+		    z-index: -1;
+		    border-radius: 15px;
+		    -webkit-transition: all 0.5s;
+		    -moz-transition: all 0.5s;
+		    -o-transition: all 0.5s;
+		    transition: all 0.5s;
+		}
+
+		.el--style-5 {
+			margin-top: 22px;
+
+			.product_after_shop_loop_switcher {
+				display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			}
+		}
+
+		.product-info {
+			padding: 0 15px;
+			padding-top: 8px;
+			margin-bottom: 33px;
+
+			@include min-1300 {
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+		}
+
+		.woocommerce-LoopProduct-link {
+			font-size: 20px;
+			font-weight: 500;
+			color: #FFF;
+		}
+
+		.star-rating {
+			margin-top: 4px;
+		}
+
+		.price {
+			font-size: 20px;
+		    font-weight: 700;
+		    color: #FFF;
+			display: inline-flex;
+		    margin-top: 0;
+		    justify-content: center;
+		    align-items: flex-start;
+		    flex-direction: column;
+		    
+		    del {
+		    	font-size: 14px;
+		    	font-weight: 500;
+		    	color: rgba(255,255,255,.5);
+		    	margin-right: 0;
+		    	margin-top: -14px;
+		    }
+		    
+		    ins {
+		    	@extend .color-primary;
+		    }
+		}
+
+		.button-cart {
+			background-color: transparent;
+		    text-transform: inherit;
+		    line-height: inherit;
+		    padding: 2px 15px 1px;
+		    min-width: 100px;
+		    border-radius: 50px;
+		    border: 2px solid;
+		    border-color: #FFF;			
+			
+			&:hover {
+				@extend .background-color-primary;
+				@extend .border-color-primary;
+			}
+
+			.tooltip {
+				font-size: 16px;
+				font-weight: 600;
+				color: #FFF;
+				position: relative;
+				opacity: 1;
+				line-height: 1.8;
+				@extend .default_font;
+			}
+		}
+
+		&:hover {
+			.content-product-imagin {
+				@include min-1300 {
+				    opacity: 1;
+				    bottom: 0;
+    				height: calc(100% - 4px);
+				}
+			}
+		}
+	}
+}

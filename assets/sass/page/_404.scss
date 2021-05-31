@@ -1,0 +1,109 @@
+.error-404 {
+    padding-top: 175px;
+    padding-bottom: 200px;
+    height: 100%;
+    font-size: 15px;
+
+    .warning-404{
+        color: white;
+        margin-bottom: 40px;
+    }
+}
+
+.error404 .page-content{
+    .pt-title-02 {
+        color: black;
+        font-size: 220px;
+        line-height: 1;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .pt-title.pt-size-large {
+        font-size: 25px;
+        line-height: 1.4;
+        color: black;
+    }
+    
+    p {
+        margin-top: 20px;
+        max-width: 664px;
+        margin: 0 auto;
+        
+        strong {
+            font-weight: 800;
+        }        
+    }
+
+    .pt-size-large + p {
+        margin-top: 34px;
+    }  
+
+    .back--homepage {
+        margin-top: 70px;
+
+        a {
+            @extend .background-color-primary;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.3;
+            padding: 15px 68px 15px 46px;
+            border-radius: 5px;
+            position: relative;
+
+            &:after {
+                content: "\e606";
+                @extend .font-icon;
+                position: absolute;
+                top: calc(50% + 0px);
+                right: 33px;
+                transform: translate(-50%, -50%);
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+    }  
+}
+.pt-link, .pt-link:focus {
+    @extend .color-primary;
+    padding: 5px 0px 4px;
+    line-height: 1;
+    border: none;
+    outline: none;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.pt-link:before, .pt-link:focus:before {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    content: '';
+    color: transparent;
+    @extend .background-color-primary;
+    height: 1px;
+    transition: width 0.2s linear;
+}
+.pt-link:hover, .pt-link:focus:hover {
+    @extend .color-primary;
+    text-decoration: none;
+}
+.pt-link:hover:before, .pt-link:focus:hover:before {
+    width: 0;
+}

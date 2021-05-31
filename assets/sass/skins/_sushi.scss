@@ -1,0 +1,559 @@
+$sushi-color-primary: #EB3335 !default;
+$sushi-color-body: #FFF !default;
+
+.home-sushi {
+	.owl-carousel {
+		.owl-nav {
+			button {
+				background-color: #5A111C;
+			}
+		}
+	}
+
+	.owl-nav {
+		[class*="owl-"] {
+			width: 53px;
+			height: 53px;
+
+			&.owl-prev,
+			&.owl-next {
+				&:before {
+					content: '';
+				    width: 48px;
+				    height: 28px;
+				    background-repeat: no-repeat;
+				    background-position: top center;		
+				    background-size: contain;	
+				   	position: relative;
+				   	opacity: .5;
+				}
+			}
+
+			&.owl-prev {
+				&:before {
+					background-image: url('assets/images/demo/nav-west.png');
+    				left: 14px;
+				}
+			}
+
+			&.owl-next {
+				left: 99px !important;
+
+				&:before {
+					background-image: url('assets/images/demo/nav-east.png');
+				    right: 14px;
+				}
+			}
+		}
+	}
+
+	.jmstestimonial-box {
+		.owl-carousel {
+			.owl-stage-outer {
+				padding-bottom: 110px;
+			}
+		}
+
+		.addon-title {
+			h3 {
+				font-size: 40px;
+			    font-weight: 600;
+			    color: #FFF;
+			    max-width: 405px;
+			    padding-bottom: 3px;
+			}
+		}
+
+		.pt-img {
+			max-width: 90px;
+			max-height: 90px;
+			margin-right: 28px;
+		}
+
+		.pt-reviewsbox-description {
+			padding-bottom: 42px;
+
+			&:after {
+				/*background-image: url('assets/images/demo/icon-quote-3.png');*/
+				background-image: url('');
+			}
+
+			.pt-content {
+				@include min-1300 {
+					max-width: 550px;
+				}
+
+				.quote {
+					position: relative;
+					display: inline;
+				    width: 64px;
+				    height: 50px;
+					margin-left: 64px;
+
+					&:before {
+						content: '';
+					    background-image: url(assets/images/demo/icon-quote-3.png);
+					    background-repeat: no-repeat;
+					    background-position: center center;
+					    background-size: contain;
+					    width: 64px;
+					    height: 50px;
+					    position: absolute;
+					    right: -37px;
+    					bottom: -35px;
+					}
+				}
+			}
+		}
+
+		.pt-reviewsbox-author {
+			.pt-title {
+				display: inline-flex;
+			    justify-content: center;
+			    align-items: flex-start;
+			    flex-direction: column;
+			    color: #FFF;
+
+			    strong {
+			    	font-size: 19px;
+			    	font-weight: 600;
+
+			    	&:after {
+			    		content: '';
+			    	}
+			    }
+
+			    span {
+			    	font-size: 14px;
+			    	font-weight: 400;
+			    	color: rgba(255,255,255,.7);
+			    	margin-top: 7px;
+			    }
+			}
+		}
+	}
+}
+
+.elementor-element {
+	&.elementor-element-48a1ba6 {
+		&:before {
+			content: '';
+			position: absolute;
+			top: calc(35% + 5px);
+			left: 0;
+			background-image: url('assets/images/demo/sushi-icon-7.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 177px;
+		    height: 251px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+	}
+
+	&.elementor-element-0c2fc09 {
+		@include min-1300 {
+			margin-top: -14px;
+		}
+	}
+
+	&.elementor-element-ba2465e {
+		.jmsservice-box {
+			.item {
+				background-color: #171F32;
+    			border-radius: 20px;
+    			padding-bottom: 23px;
+    			position: relative;
+    			margin-top: 68px;
+			}
+
+			.image {
+				top: 0;
+			    right: 50%;
+			    transform: translate(50%, -50%);
+			    position: absolute;
+			}
+
+			img {
+				opacity: 1 !important;
+				max-width: 133px;
+				max-height: 133px;
+			}
+
+			.title-service {
+				font-size: 23px;
+				font-weight: 500;
+				color: #FFF;
+				margin-bottom: 0;
+				margin-top: 25px;
+				padding-top: 92px;
+			}
+
+			.description {
+				font-size: 18px;
+				font-weight: 400;
+				color: rgba(255,255,255,.7);
+				margin-top: 9px;
+			}
+		}
+	}
+
+	&.elementor-element-3499f8a {
+		margin-bottom: 10px;
+		margin-top: 50px;
+
+		@include min-1300 {
+			margin-top: 112px;
+		}
+
+		.title {
+			@extend .default_font;
+
+			@include min-1300 {
+				max-width: 450px;
+			}
+		}
+	}
+
+	&.elementor-element-4e20146 {
+		@extend .default_font;
+		line-height: 1.7;
+		font-size: 18px;
+		color: rgba(255,255,255,.7);
+		margin-bottom: 57px;
+		
+		p {
+			margin-top: 0;
+
+			@include min-1300 {
+				max-width: 550px;
+			}
+		}
+	}
+
+	&.elementor-element-94e5d39 {
+		.elementor-button.elementor-size-xl {
+			@extend .default_font;
+			background-color: #EB3335;
+			border: 2px solid;
+			border-color: #EB3335;
+		    padding: 15px 22px;
+		    min-width: 208px;
+		    text-align: center;
+		    border-radius: 50px;
+
+		    &:hover {
+		    	border-color: #FFF;
+		    	background-color: transparent;
+		    }
+		}
+	}
+
+	&.elementor-element-66bbe54 {
+		.jms-tabs-title {
+			display: none !important;
+		}
+
+		.item-wrap {
+			.product-item {
+				margin-bottom: 38px;
+			}
+		}
+	}
+
+	&.elementor-element-cd29c4f {
+		margin-top: 37px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 112px;
+    		right: -144px;
+			background-image: url('assets/images/demo/sushi-icon-6.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 286px;
+		    height: 328px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}
+
+		.banner-box {
+			margin-bottom: 0;
+			border-radius: 20px;
+
+			.content {
+				@include min-1300 {
+					max-width: 333px;
+				    text-align: left;
+				    float: right;
+				}
+			}
+
+			.title {
+				p > span {
+					font-size: 42px;
+					font-weight: 700;
+				}
+			}
+
+			.subtitle {
+				margin-top: -5px;
+			}
+
+			.button-banner-wrapper {
+				margin-top: 33px;
+			}
+
+			.button-banner {
+				border: 2px solid;
+			    min-width: 120px;
+			    text-align: center;
+			    border-radius: 50px;
+			    line-height: 1.8;
+			    padding: 0 12px;
+			    padding-top: 2px;
+			    padding-bottom: 1px;	
+
+			    &:hover {
+			    	@extend .background-color-primary;
+					@extend .border-color-primary;
+			    }	
+
+				&:after {
+					height: 0;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-a619655 {
+		.banner-box {
+			.content {
+				@include min-1300 {
+					position: relative;
+    				left: -23px;
+				}
+			}
+		}
+	}
+
+	&.elementor-element-77c2099 {
+		background-image: url('assets/images/demo/sushi-banner-5.jpg');
+	    background-repeat: no-repeat;
+	    background-position: top center;		
+	    background-size: cover;
+
+
+	    @include min-1300 {
+	    	min-height: 250px;
+	    }	
+	}
+
+	&.elementor-element-a823645 {
+		.mc4wp-discount {
+			font-size: 40px;
+			font-weight: 400;
+			color: #FFF;
+			@extend .default_font03;
+		}
+
+		.mc4wp-form-fields {
+			input[type="email"] {
+				background: rgba(0,0,0, .25);
+
+				&::placeholder { 
+	              color: #FFF;
+	              opacity: 1;
+	            }  				
+			}
+
+			button[type="submit"] {
+				background-color: transparent;
+			    border: 2px solid;
+			    border-color: #FFF;
+
+			    &:hover {
+			    	@extend .border-color-primary;
+			    }
+			}
+		}
+	}
+
+	&.elementor-element-a305e6c {
+		@include min-1300 {
+			margin-top: 32px;
+			position: relative;
+    		left: 63px;
+		}
+	}
+
+	&.elementor-element-7fe9d72 {
+		margin-top: 68px;
+		margin-bottom: 71px;
+	}
+
+	&.elementor-element-27ca640 {
+		margin-top: 69px;
+		margin-bottom: 6px;
+
+		hr {
+			border-top: 1px solid rgba(255,255,255,.15);
+		}
+	}
+
+	&.elementor-element-2530d09 {
+		font-size: 17px;
+		color: #FFF;
+		@extend .default_font;
+
+		p {
+			margin-top: 0;
+		}
+	}
+
+	&.elementor-element-b1dd055 {
+		@include min-791 {
+			text-align: right !important;
+		}
+	}	
+
+	&.elementor-element-07834df {
+		margin-bottom: 10px;
+	}
+
+	&.elementor-element-10c04d9 {
+		margin-bottom: 7px;
+	}
+
+	&.elementor-element-c3884b0 {
+		margin-top: 51px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: calc(15% + 3px);
+			right: -45px;
+			background-image: url('assets/images/demo/sushi-icon-4.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 211px;
+		    height: 326px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }			
+		}
+	}
+
+	&.elementor-element-6c5ec18 {
+		margin-top: 74px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: calc(53% + 12px);
+    		left: -33px;
+			background-image: url('assets/images/demo/sushi-icon-5.png');
+		    background-repeat: no-repeat;
+		    background-position: top center;		
+		    background-size: contain;
+		    width: 177px;
+		    height: 251px;
+		    display: none;
+		    z-index: 9;
+
+		    @include min-1300 {
+		    	display: inline-block;
+		    }
+		}		
+	}
+
+	&.elementor-element-05d907f {
+		margin-top: 45px;
+		margin-bottom: 103px;
+	}
+
+	&.elementor-element-535b261 {
+		margin-top: 50px;
+
+		@include min-1300 {
+			margin-top: 113px;
+		}
+	}
+
+	&.elementor-element-2affb38 {
+		img {
+			@include min-1300 {
+				position: relative;
+    			left: -154px;
+			}
+		}
+	}
+
+	&.elementor-element-424823a {
+		img {
+			@include min-1300 {
+				min-width: 753px;
+				min-height: 653px;
+				position: relative;
+    			right: -3px;
+			}
+		}
+	}
+}
+
+.footer-5 {
+	padding-top: 49px;
+	padding-bottom: 7px;
+	background-color: #0B111F;
+
+	@include min-1300 {
+		padding-top: 99px;			
+	}
+
+	.elementor-widget {
+		h5 {
+			color: #FFF;
+		}
+	}
+
+	ul.menu {
+		font-weight: 500;
+
+		a {
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+	
+	hr {
+	    border-top: 1px solid;
+	    border-color: rgba(255,255,255,.15);
+	}
+
+	.instagram-pic-wrapper {
+		.layout-spacing-20 {
+			.item {
+				padding-left: 7.5px;
+				padding-right: 7.5px;
+
+				.instagram-picture {
+					border-radius: 5px;
+				}
+			}
+		}
+	}
+}

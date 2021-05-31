@@ -1,0 +1,30 @@
+.badge {
+    @extend .background-color-primary;
+    
+    top: 11px;
+    right: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 6px 5px 2px;
+    border-radius: 0;
+    z-index: 1;
+    color: #fff;
+    min-width: 60px;
+    text-transform: uppercase;
+    border-radius: 50px;
+
+    &.new{
+        background: #5bbcdc;
+    }
+
+    &.image_label{
+        top: 0;
+        right: 0;
+        left: auto;
+        padding: 0;
+        background: none;
+        min-width: 28px;
+        max-width: 40px;
+    }
+}

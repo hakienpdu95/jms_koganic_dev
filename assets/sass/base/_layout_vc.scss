@@ -1,0 +1,19 @@
+.stretch_row_wide{
+	margin-right: auto;
+	margin-left: auto;
+	position: static !important;
+	padding: 0 !important;
+	max-width: 1650px;
+}
+
+.wrapper-boxed{
+	.stretch_row_wide{
+		width: 100% !important;
+	}
+}
+
+@media screen and (min-width: 1400px){
+	.stretch_row_wide{
+		width: calc(100% - 120px) !important;
+	}
+}

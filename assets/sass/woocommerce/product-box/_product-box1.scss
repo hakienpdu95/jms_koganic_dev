@@ -1,0 +1,120 @@
+.product-style-1 {
+	.ImageOverlayCa {
+	    background-color: #212126;
+	    height: 100%;
+	    left: 0;
+	    top: 0%;
+	    width: 100%;
+	    position: absolute;
+	    z-index: -1;
+	}
+
+    .tooltip {
+        position: relative;
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 600;
+        @extend .default_font;
+    }
+
+    .product_after_shop_loop_switcher {
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;    	
+    }
+
+	.price {
+		margin-top: 0;
+		font-size: 20px;
+		font-weight: 700;
+		color: white;
+		display: inline-flex;
+		align-items: flex-start;
+		line-height: 1;
+		min-height: auto;
+		flex-direction: column;
+    	justify-content: flex-start;
+
+    	del {
+    		margin-right: 0;
+    		font-size: 14px;
+    		font-weight: 500;
+    		color: rgba(255,255,255,.5);
+    		margin-bottom: 7px;
+    	}
+
+    	ins {
+    		color: #FF2626;
+    	}
+	}
+
+    .button-cart {
+	    background-color: transparent;
+	    text-transform: inherit;
+	    font-weight: 600;
+	    line-height: 1.1;
+	    font-size: 16px;
+	    padding: 4.5px 15px;
+	    min-width: 100px;
+	    border: 2px solid;
+	    @extend .border-color-primary;
+	    border-radius: 30px;    	
+	    @extend .color-primary;
+
+	    &:hover {
+	    	color: white;
+	    	@extend .border-color-primary;
+	    	@extend .background-color-primary;
+	    }
+    }
+
+    .product-box {
+    	border-radius: 15px;
+		border: 1px solid;
+    	border-color: #212126;		
+    	transition: all 0.3s;
+		
+		&:not(.has-stars) {
+			.el-price {
+				margin-top: 47px;
+			}
+		}
+
+		&:hover {
+			@extend .border-color-primary;
+		}
+
+		.product-info {
+			padding: 0 15px;
+			margin-bottom: 22px;
+
+			@include min-1300 {
+				padding: 0 30px;
+			}
+		}
+
+		.star-rating {
+			margin-top: 2px;
+		}
+
+		.el-price {
+			margin-top: 14px;
+		}
+
+		.product-cat {
+			margin-top: 0;
+
+			a {
+				font-size: 15px;
+				color: rgba(255,255,255,.7);
+			}
+
+			+ a.woocommerce-LoopProduct-link {
+				font-size: 20px;
+				font-weight: 500;
+				color: white;
+				margin-top: 8px;
+			}
+		}
+    }
+}
